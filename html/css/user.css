@@ -1,0 +1,89 @@
+﻿ @charset"utf-8";
+ .border{
+    height:8px;
+}
+ /* ====导航条CSS==== */
+.tit-current a{  background: #00ADEB;color: #fff}
+.tit-current a:hover{ text-decoration: none; background: #00ADEB !important;color: #fff !important}
+/* ====导航条CSSEND==== */
+
+ /* ====新闻列表页css==== */
+ /* 列表头部响应式 */
+ 
+ .newlist_media_1 {width: 25%}
+ .newlist_media_2 {width: 8.33333%}
+ @media (min-width:768px) and (max-width:991px) {
+    .newlist_media_1 {width: 16.66667%}
+    .newlist_media_2 {width: 16.66667%}
+ }
+ /* ====新闻列表页cssEnd==== */
+
+ /* ====用户认证页css==== */
+.h-32{height: 32px}
+.h-24{height: 24px}
+.top-1{top: 1px}
+.right-16{right: 16px}
+.w-400{width: 400px}
+.opacity-v1{opacity: 1 !important}
+.mar-0-auto{margin: 0 auto}
+.icon-ok{color: #3c763d; position: relative; top: 2px}
+.icon-remove{color: #333; position: relative; top: 2px}
+.icon-volume-up {color: #3498db; position: relative; top: 2px}
+.i-volume-border{padding: 3px; border-radius: 50%; border:1px #3498db solid}
+.i-user{background: url(../img/user/user_ico.png) -310px 0px no-repeat;position: relative;top:2px}
+.i-userh{background: url(../img/user/user_icoh.png) -310px 0px no-repeat;position: relative;top:2px}
+.i-pwd{background: url(../img/user/user_ico.png) -39px 0px no-repeat;position: relative;top:2px}
+.i-pwdh{background: url(../img/user/user_icoh.png) -39px 0px no-repeat;position: relative;top:2px}
+.i-sign{background: url(../img/user/user_ico.png) 0px 0px no-repeat;position: relative;top:2px}
+.i-signh{background: url(../img/user/user_icoh.png) 0px 0px no-repeat;position: relative;top:2px}
+.i-github{background: url(../img/user/user_ico.png) -273px 0px no-repeat;position: relative;top:2px}
+.i-githubh{background: url(../img/user/user_icoh.png) -273px 0px no-repeat;position: relative;top:2px}
+.i-phone{background: url(../img/user/user_ico.png) -78px 0px no-repeat;position: relative;top:2px}
+.i-phoneh{background: url(../img/user/user_icoh.png) -78px 0px no-repeat;position: relative;top:2px}
+.i-globe{background: url(../img/user/user_ico.png) -157px 0px no-repeat;position: relative;top:2px}
+.i-globeh{background: url(../img/user/user_icoh.png) -157px 0px no-repeat;position: relative;top:2px}
+.i-card{background: url(../img/user/user_ico.png) -237px 0px no-repeat;position: relative;top:2px}
+.i-cardh{background: url(../img/user/user_icoh.png) -237px 0px no-repeat;position: relative;top:2px}
+/*移动端样式*/
+
+/* ====用户认证页CSSEND==== */
+
+/* ====我的关注页==== */
+.bor-b5b5b5{border: 1px #b5b5b5 solid}
+.bor-ddd{border:1px #ddd solid}
+.bor-rb-ddd{border-right: 1px #ddd solid;border-bottom: 1px #ddd solid}
+.bor-b-ddd{border-bottom: 1px #ddd solid}
+.pd-3{padding: 3px;}
+.ptb-29{padding-top: 29px; padding-bottom: 29px}
+.pt-26{padding-top: 26px}
+.plr-15{padding: 0 15px}
+.h-50{height: 50px}
+/* ====我的关注页END==== */
+
+/* 用户中心首页css */
+.use-img{width:80px;height:80px;box-shadow:0px 0px 3px 3px #F7E0DF;-webkit-box-shadow:0px 0px 3px 3px #F7E0DF;-moz-box-shadow:0px 0px 3px 3px #F7E0DF}
+.xinyong{background: url(../img/user/xinyong.png) no-repeat;width:20px; height: 22px;display: inline-block;vertical-align: bottom}
+.xinyongno{background: url(../img/user/xinyongno.png) no-repeat;width:20px; height: 22px;display: inline-block;vertical-align: bottom}
+.img240-135{width: 240px; height: 135px}
+.swi-prev1{background-size:35%;left:-20px}
+.swi-next1{background-size:35%;right:-20px}
+/* 用户中心页END */
+
+/* 代金券页css */
+.red-vou{border:1px solid #E95A6F}
+.red-vou-bg{background: #E95A6F}
+.red-vou-con{background: url(../img/user/red_flow.png) repeat-y;background-position:-1px 0px}
+.used-vou{border:1px solid  #E5CCA4}
+.used-vou-bg,.bage{background: #E5CCA4}
+.used-vou-con{background: url(../img/user/used_flow.png) repeat-y;background-position:-1px 0px}
+.over-vou{border:1px solid #ccc}
+.over-vou-bg,.bage1{background: #ccc}
+.over-vou-con{background: url(../img/user/over_flow.png) repeat-y;background-position:-1px 0px}
+.bage,.bage1{height: 24px;width: 92px;transform: rotate(45deg);right:-23px;top: 11px}
+.cash-hover{opacity: 0}
+.red-vou:hover .cash-hover{background: rgba(0,0,0,0.5); opacity: 1}
+.cash-hover a.info{background: #E95A6F;top: 50%;left: 50%;transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%)}
+
+/* 站内信css */
+.checkstate {background: url(../img/user/icon-msg.png) no-repeat; display: inline-block; height: 16px; width: 16px}
+.close{border: none}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ==========meta开始========== -->	
+<!-- 清空浏览器本地缓存 -->
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+<!-- 本网页关键字和关键内容 -->
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+<!-- 采用webkit内核(急速内核) -->
+	<meta name="renderer" content="webkit">
+<!-- 移动屏幕的缩放初始缩放比例1.0，不允许用户缩放，最小比例1.0，最大比例1.0 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- 网站开启对web app的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- web app顶部状态条的颜色为灰色半透明 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 忽略页面中的数值识别为电话号码 -->
+	<meta name="format-detection" content="telephone=no">
+<!-- web app设备添加到主屏幕后全屏显示 -->
+	<meta name="apple-touch-fullscreen" content="yes">
+<!-- uc浏览器强制全屏	 -->
+	<meta name="full-screen" content="yes">
+<!-- 以utf-8格式编码 -->
+	<meta charset="UTF-8">
+<!-- ==========meta结束========== -->
+<!-- ==========link开始========== -->		
+<!-- 网页前面的小图标 -->
+	<link rel="icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+<!-- 基本样式文件 -->
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/user.css">
+<!-- 字体样式文件 -->
+	<link rel="stylesheet" href="../../ctrl/font/css/font-awesome.min.css">
+<!-- ==========link结束========== -->
+<!-- ==========script结束========== -->
+
+
+	<title>我的关注</title>
+</head>
+<body>
+	<div class="full-w" style="height: 100px; background-color: green;"></div>
+
+	<div class="container">
+		<div class="row clear mb-20 pb-20">
+		<!-- 侧边栏菜单 -->
+			<div class="col-md-2  hidden-xs">
+					<div class="con-side">
+						<ul id="fold1" class="fold">
+
+							<li class="item mb-10">
+								<h4 class="gradient-gray f-14">
+									<i class="icon-user f-20"></i>
+									<span class="f-16 line-h-20 ml-5" >用户</span>
+									<b>+</b>
+								</h4>
+								<div class="info">
+									<ul>
+										<li class="tit-current">
+											<a class="inline-block full-w f-14 " >基本资料</a>
+										</li>
+										<li>
+											<a class="inline-block full-w f-14 " >用户管理</a>
+										</li>
+										<li>
+								   			<a class="inline-block full-w f-14 " >交易记录</a>
+								   		</li>
+										<li >
+											<a class="inline-block full-w f-14 " >地址管理</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="item mb-10">
+								<h4 class="gradient-gray f-14">
+									<i class="icon-reorder f-20"></i>
+									<span class="f-16 line-h-20 ml-5" >用户</span>
+									<b>+</b>
+								</h4>
+								<div class="info">
+									<ul>
+										<li >
+											<a class="inline-block full-w f-14 " >基本资料</a>
+										</li>
+										<li>
+											<a class="inline-block full-w f-14 " >用户管理</a>
+										</li>
+										<li>
+								   			<a class="inline-block full-w f-14 " >交易记录</a>
+								   		</li>
+									</ul>
+								</div>
+							</li>
+							<li class="item mb-10">
+								<h4 class="gradient-gray f-14">
+									<i class="icon-rss f-20"></i>
+									<span class="f-16 line-h-20 ml-5" >用户</span>
+									<b>+</b>
+								</h4>
+								<div class="info">
+									<ul>
+										<li >
+											<a class="inline-block full-w f-14 " >基本资料</a>
+										</li>
+										<li>
+											<a class="inline-block full-w f-14 " >用户管理</a>
+										</li>
+									</ul>
+								</div>
+							</li>				
+																	
+							<li class="item mb-10">
+								<h4 class="gradient-gray f-14">
+									<i class="icon-suitcase f-20"></i>
+									<span class="f-16 line-h-20 ml-5" >用户</span>
+									<b>+</b>
+								</h4>
+								<div class="info">
+									<ul>
+										<li >
+											<a class="inline-block full-w f-14 " >基本资料</a>
+										</li>
+									</ul>
+								</div>
+							</li>					  
+						  
+						</ul>
+
+					</div>
+			</div>
+		<!-- 侧边栏菜单end -->
+		<!-- 内容开始 -->
+		<div class="col-md-10 pd-0 bor-ddd">
+			<!-- 查询 -->
+			<div class="col-xs-12 gradient-gray bor-rb-ddd">
+				<div class="f-13 col-xs-4 pd-5 ">
+				    <div class="lab-out-v2 pt-5 pb-5">
+				        <label class="ipt-label inline-block">分类:</label>
+				    </div>
+				    <div class="ipt-out-v2 pt-5">
+				        <div class="sel sel-ck">
+				            <div class="s-input radius-3">
+				                <span>请选择</span><i class="icon-caret-down"></i>
+				            </div>
+				            <ul class="opt opt-ck dis-n">
+				                <li value="0">全部</li>
+				                <li value="1">新闻行情</li>
+				                <li value="2">商品</li>
+				                <li value="3">交易厅</li>
+				                <li value="4">金融投资</li>
+				                <li value="5">会展</li>
+				                <li value="6">旗舰店</li>
+				            </ul>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-xs-3 pd-10">
+				    <button type="button" class="btn radius-3 btn-primary btn-small pull-left">查询</button>
+				</div>
+			</div>
+			<!-- 头部 -->
+			<div class="col-xs-12 gradient-gray clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10 f-12 bor-rb-ddd">
+					<span>名称</span>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left f-12 pd-0">
+					<div class="col-md-6 col-sm-6 pull-left pt-10 pb-10 bor-rb-ddd">
+						<span>关注类型</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left pt-10 pb-10 bor-rb-ddd">
+						<span>关注时间</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left pt-10 pb-10 f-12 bor-b-ddd ">
+					<span>操作</span>
+				</div>
+			</div>
+			<!-- 一 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/4.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							铁路增加发运量 保障港口煤炭供应
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>新闻详情</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2017-03-17</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 二 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/5.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							公司召开2016年半年度工作会议
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>新闻详情</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2016-11-10</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 三 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/6.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							2016 新疆国际矿业与装备博览会暨中国-亚欧矿业部长级论坛
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>会展</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2016-06-27</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 四 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/7.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							兰州亚太实业集团有限公司多个金矿、铅锌矿项
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>金融投资</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2016-05-24</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 五 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/8.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							赤峰某金矿项目
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>金融投资</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2016-05-24</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 六 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/9.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							海仕通集团甘肃省迭部县当浪沟金矿普查项目
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>金融投资</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2016-08-13</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 七 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/10.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							铁路增加发运量 保障港口煤炭供应
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>新闻详情</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2017-03-17</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 八 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/11.jpg" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							世界首块石墨烯太赫兹芯片成功研发
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>新闻详情</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2017-07-19</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 九 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/12.png" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							新华社等中央主要媒体及所属新媒体齐聚深圳
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>会展</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2015-06-18</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- 十 -->
+			<div class="col-xs-12 bg-white clear pd-0">
+				<div class="col-lg-7 col-md-6 col-sm-5 text-center pull-left pt-10 pb-10  f-12 bor-rb-ddd clear">
+					<div class="col-md-2 col-sm-3 pd-0 pull-left">
+						<img src="../../img/user/13.png" class="full-w h-50 cur-p" alt="">
+					</div>
+					<div class="col-md-10 col-sm-9 pull-left text-left pt-15 pb-10">
+						<p class="line-h-20 newline text-line-1 f-12 cur-p hov-primary">
+							采访团一行来到位于宝安区的华讯方舟
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 text-center pull-left pd-0">
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>新闻详情</span>
+					</div>
+					<div class="col-md-6 col-sm-6 pull-left ptb-29 bor-rb-ddd">
+						<span>2017-03-17</span>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3 text-center pull-left f-12 pt-26 pb-20 clear bor-b-ddd">
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							查看
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 pd-0 pull-left">
+						<button class="btn btn-tiny plr-15 btn-primary">
+							取消
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 内容结束 -->
+		</div>
+
+	</div>
+
+
+<!-- jquery文件 -->
+	<script src="../../js/comm/jquery.min.js"></script>
+<!-- base的js文件 -->
+	<script src="../../js/comm/mining.js"></script>
+</body>
+</html>

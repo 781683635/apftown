@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>站内信</title>
+	<link rel="stylesheet" href="../../css/user.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+<div class="container mt-20" >
+	<div class="row clear">
+		<div class="col-sm-2">
+		
+		</div>
+		<div class="col-sm-10 col-xs-12">
+		     <div class="clear">
+                 <p class="pull-left col-555 mt-10 line-h-25 f-18 mb-10"> 
+                     站内信息
+                 </p>
+                 <div class="pull-right t-none col-white line-h-15 ">
+                    <a class="bg-primary pt-5 pb-5 pl-20 pr-20 mg-10 inline-block">标记已读</a>
+                    <a class="btn-red pt-5 pb-5 pl-20 pr-20 mt-10 mb-10 inline-block" onclick="show('delete')">删除</a>
+                 </div>                
+            </div>
+			<div class="content">
+	             <table class="hade bor-b-ccc col-12">
+	                  <tbody class="col-12">
+	                     <tr class="text-center gradient-gray">
+	                         <th class="text-center col-1 pd-10 bor-ccc">
+	                         	<input id="checkAll" type="checkbox" />
+	                         </th>
+	                         <th class="col-2 bor-ccc pl-0 pr-0">
+	                            状态
+	                         </th>
+	                         <th class="col-2 bor-ccc pl-0 pr-0">
+	                         	发件人
+	                         </th>
+	                         <th class="col-4 bor-ccc">
+	                         	内容
+	                         </th>
+	                         <th class="col-3 wid-25 bor-ccc">
+	                            时间
+	                         </th>
+	                     </tr>
+	                     <tr class="text-center">
+	                         <td class="text-center pd-10 bor-ccc">
+	                         	<input name="subBox" type="checkbox" />
+	                         </td>
+	                         <td class="bor-ccc">
+	                            <span class="checkstate"></span>
+	                         </td>
+	                         <td class="bor-ccc">
+	                         	矿业圈
+	                         </td>
+	                         <td class="t-none bor-ccc">
+	                         	<div class="text-line-2" >
+                                    <a class="col-primary t-none line-h-15 " onclick="show('popup')">
+                                         尊敬的liaoheying,您于3.22 0:00利息0.01元,可用资金0.01元
+                                    </a>            
+                                </div>
+	                         </td>
+	                         <td class="bor-ccc">
+	                           2017-03-22 00:00
+	                         </td>
+	                     </tr>
+	                     <tr class="text-center">
+	                         <td class="text-center pd-10 bor-ccc">
+	                         	<input name="subBox" type="checkbox" />
+	                         </td>
+	                         <td class=“bor-ccc">
+	                            <span class="checkstate"></span>
+	                         </td>
+	                         <td class="bor-ccc">
+	                         	矿业圈
+	                         </td>
+	                         <td class="t-none bor-ccc">
+	                         	<div class="text-line-2">
+                                    <a class="col-primary t-none line-h-15" onclick="show('popup')">
+                                         尊敬的liaoheying,您于3.22 0:00利息0.01元,可用资金0.01元
+                                    </a>            
+                                </div>
+	                         </td>
+	                         <td class="bor-ccc">
+	                           2017-03-22 00:00
+	                         </td>
+	                     </tr>
+	                  </tbody>
+	             </table>
+			</div>
+	    </div>
+	</div>
+
+
+	<div class="show" id="popup">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	             <div class="modal-header clear">
+	                <button type="button" class="close-mod pd-5">×</button>
+	                <p class="ppa f-16 col-primary">标题</p>
+	            </div>
+	            <div class="pt-20 pb-20 pl-10 bor-b-ccc f-w">
+	            	<span>发件人：黄金贷</span>
+	                <span>收件人：</span>
+	                <span>时间：2017-03-23 00:00:08.0</span>
+	            </div>
+	            <div class="pd-20">
+	                <span class="col-ccc">尊敬的liaoheying,您于3.23 0:00利息0.01元,可用资金0.02元</span>                  
+	            </div>
+	            <div class="pd-10 mt-20 text-center">
+	                <button class="btn btn-small pt-5 pb-5 pl-20 pr-20 mr-10 col-white btn-primary
+	                ">确定</button>
+	                <button class="btn btn-small  pt-5 pb-5 pl-20 pr-20 col-white btn-gray">取消</button>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+
+     <div class="show" id="delete">
+        <div class="modal-dialog">
+        	<div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close-mod pd-5">×</button>
+	                <p class="ppa f-16 col-primary">标题</p>
+	            </div>
+	            <div class="text-center pt-20 pb-20">
+	                <p class="col-ccc">  
+	                     你确定要删除此条消息吗？
+	                </p>                  
+	            </div>
+	            <div class="pd-10 mt-20 text-center">
+	                <button class="btn btn-small pt-5 pb-5 pl-20 pr-20 mr-10 col-white btn-primary
+	                ">确定</button>
+	                <button class="btn btn-small pt-5 pb-5 pl-20 pr-20 col-white btn-gray">取消</button>
+	            </div>
+        	</div>
+          
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="../../js/comm/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/comm/mining.js"></script>
+<script type="text/javascript">
+    $(function() {
+       $("#checkAll").click(function() {
+            $('input[name="subBox"]').attr("checked",this.checked); 
+        });
+        var $subBox = $("input[name='subBox']");
+        $subBox.click(function(){
+            $("#checkAll").attr("checked",$subBox.length == $("input[name='subBox']:checked").length ? true : false);
+        });
+    });
+</script>
+
+
+</body>
+</htm>

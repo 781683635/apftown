@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==========meta开始========== -->
+    <!-- 清空浏览器本地缓存 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 本网页关键字和关键内容 -->
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <!-- 采用webkit内核(急速内核) -->
+    <meta name="renderer" content="webkit">
+    <!-- 移动屏幕的缩放初始缩放比例1.0，不允许用户缩放，最小比例1.0，最大比例1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- 网站开启对web app的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- web app顶部状态条的颜色为灰色半透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 忽略页面中的数值识别为电话号码 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- web app设备添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- uc浏览器强制全屏   -->
+    <meta name="full-screen" content="yes">
+    <!-- 以utf-8格式编码 -->
+    <meta charset="UTF-8">
+    <!-- ==========meta结束========== -->
+    <!-- ==========link开始========== -->
+    <!-- 网页前面的小图标 -->
+    <link rel="icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+    <!-- 基本样式文件 -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/user.css">
+    <!-- 字体样式文件 -->
+    <link rel="stylesheet" href="../../ctrl/font/css/font-awesome.min.css">
+    <!-- form表单样式文件 -->
+    <link rel="stylesheet" type="text/css" href="../../css/sky-forms.css">
+    <!-- 弹出时间样式文件 -->
+    <link rel="stylesheet" type="text/css" href="../../ctrl/laydate/need/laydate.css">
+    <!-- cutImg样式文件 -->
+    <link rel="stylesheet" href="../../ctrl/cutImg/css/normalize.css" />
+    <link rel="stylesheet" href="../../ctrl/cutImg/css/default.css">
+    <link rel="stylesheet" href="../../ctrl/cutImg/dist/cropper.css">
+    <link rel="stylesheet" href="../../ctrl/cutImg/css/main.css">
+    <!-- ==========link结束========== -->
+    <title>用户认证</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 主界面 -->
+        <div style="height: 300px; width: 100%; background-color: #888;"></div>
+        <div class="row clear mb-20 pb-20 clear">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-10 mb-10 pd-20">
+                <!-- 用户名 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-15">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-user pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">用户名</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-ok inline-block f-20"></i> <span class="f-14 ml-10 inline-block pd-5">已认证</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 pd-5 clear">
+                        <p class=" f-12 newline text-line-2  line-h-25">
+                            <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                            用于登录小镇
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none pd-5">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5" onclick="show('username')">填写</button>
+                    </div>
+                </div>
+                <!-- 登录密码 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-5">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-pwdh pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">登录密码</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-remove inline-block f-20"></i> <span class="f-14 ml-15 inline-block pd-5">未认证</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 pd-5 clear">
+                            <p class=" f-12 newline text-line-2 line-h-25">
+                                <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                                用于登录小镇
+                            </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none pd-5">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5" onclick="show('loginpassword')">修改</button>
+                    </div>
+                </div>
+                <!-- 实名认证 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-5">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-signh pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">实名认证</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-remove inline-block f-20"></i> <span class="f-14 ml-15 inline-block pd-5">未认证</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 pd-5 clear">
+                            <p class=" f-12 newline text-line-2 line-h-25">
+                                <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                                保障资金安全
+                            </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none pd-5">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5" onclick="show('authent')">修改</button>
+                    </div>
+                </div>
+                <!-- 头像 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-5">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-github pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">头像</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-ok inline-block  f-20"></i> <span class="f-14 ml-10 inline-block pd-5">已认证</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 pd-5 clear">
+                        <p class=" f-12 newline text-line-2 line-h-25">
+                                <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                                用于头像认证
+                        </p>
+                         
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none pd-5">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5" onclick="show('show_cutImg')">修改</button>
+                    </div>
+                </div>
+                <!-- 绑定手机 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-5">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-phone pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">绑定手机</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-ok inline-block  f-20"></i> <span class="f-14 ml-10 inline-block pd-5">已认证</span><span class="f-14 ml-10 hidden-xs hidden-sm hidden-md inline-block pd-5 ">15011049698</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 pd-5 clear">
+                        <p class=" f-12 newline text-line-2 line-h-25">
+                                <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                                用于密码找回
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none pd-5">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5" onclick="show('bindphone')">修改</button>
+                    </div>
+                </div>
+                <!-- 电子邮件 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-5">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-globeh pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">电子邮件</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-remove inline-block f-20"></i> <span class="f-14 ml-15 inline-block pd-5">未认证</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 pd-5 clear">
+                        <p class=" f-12 newline text-line-2 line-h-25">
+                                <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                                用于找回密码
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3 col-xs-6 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none pd-5">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5 email">绑定</button>
+                    </div>
+                </div>
+                <!-- 资金密码 -->
+                <div class="row clear bor-dashed-1 bor-l-none bor-r-none bor-t-none pt-5">
+                    <div class="col-sm-3 col-xs-6 line-h-20 pd-5">
+                        <div class="clear"><i class="i-card pull-left f-20 img-25"></i> <span class="f-14 ml-10 pull-left pd-5">资金密码</span></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 line-h-20 bor-dashed-1 bor-t-none bor-b-none pd-5">
+                        <i class="icon-ok inline-block  f-20"></i> <span class="f-14 ml-10 inline-block pd-5">已认证</span>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 pd-5 clear">
+                        <p class=" f-12 newline text-line-2 line-h-25">
+                                <i class="icon-volume-up i-volume-border inline-block f-14 "></i>
+                                用于资金安全
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3 col-xs-12 line-h-15 bor-dashed-1 bor-t-none bor-b-none bor-r-none  pl-5 pr-10 clear">
+                            <button class="cur-p btn btn-tiny btn-primary inline-block mg-5" onclick="show('bankroll')">修改</button>
+                            <button class="cur-p btn btn-tiny btn-pink inline-block mg-5 " onclick="show('findbankpwd')" >找回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 弹出层 -->
+        <!-- 填写用户名 -->
+        <div class="show" id="username">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-user">填写用户名</p>
+                    </div>
+                    <form class="modal-main ">
+                        <p class="mb-10 line-h-20">
+                            <span class="modal-msg icon-info-sign ">&nbsp;温馨提示:</span> 
+                            请填写您的用户名。
+                        </p>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-2 pull-left text-right f-14 col-999 pt-10 pb-10 pl-0 pr-0 " >
+                                用户名：
+                            </div>
+                            <div class="col-xs-8 col-sm-10 pull-left ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-2 pull-left text-right f-14 col-999 pt-10 pb-10 pl-0 pr-0 " >
+                                确认用户名：
+                            </div>
+                            <div class="col-xs-8 col-sm-10 pull-left ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+
+                        <div class="bor-b-l ">
+                        </div>
+                        <div class="pd-20 ml-10 mr-10 text-right ">
+                            <button class="btn btn-primary f-14 btn-small ">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 修改密码 -->
+        <div class="show" id="loginpassword">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-key">修改登录密码</p>
+                    </div>
+                    <form class="modal-main ">
+                        <p class="mb-10 line-h-20">
+                            <span class="modal-msg icon-info-sign ">&nbsp;温馨提示:</span> 为了您的账户安全，请定期更换登录密码，并确保登录密码设置与资金密码不同。
+                        </p>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-2 pull-left text-right f-14 col-999 pd-10 " >
+                                原密码：
+                            </div>
+                            <div class="col-xs-8 col-sm-10 pull-left ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-2 pull-left text-right f-14 col-999 pd-10 ">
+                                 新密码：
+                            </div>
+                            <div class="col-xs-8 col-sm-10 pull-left ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-2 pull-left text-right f-14 col-999 pd-10 ">
+                                确认密码：
+                            </div>
+                            <div class="col-xs-8 col-sm-10 pull-left ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="bor-b-l ">
+                        </div>
+                        <div class="pd-20 ml-10 mr-10 text-right ">
+                            <button class="btn btn-primary f-14 btn-small ">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 身份认证 -->
+        <div class="show" id="authent">
+            <div class="modal-dialog ">
+                <div class="modal-content clear" >
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-ok-sign">尊敬的客户，您好</p>
+                    </div>
+                    <p class="pd-10 mr-10 ml-10 line-h-20 f-14 ">
+                        为了保证您的资金安全，现需为您进行身份及银行卡认证，通过与银行合作，充值至少1分钱即可完成安全认证。根据反洗钱相关条例，维护金融市场安全有序运行，用户只能通过绑定的银行卡进行资金操作。
+                    </p>
+                    <div class="row pd-10 clear ">
+                        <div class="col-5 pull-left ">
+                            <button class="btn btn-primary btn-tiny pull-right ">确认</button>
+                        </div>
+                        <div class="col-5 pull-right ">
+                            <button class="btn btn-primary btn-tiny pull-left ">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 上传头像 -->
+        <div class="show" id="show_cutImg">
+            <div class="modal-dialog">  
+                <div class="modal-content clear" id="myModal">
+                    <div class="modal-body clear">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0px;">
+                            <div class="img-container">
+                                <img src="" alt="点击下面选择文件按钮进行选择文件！">
+                                <div class="img-type" style="display:none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer2 clear">
+                        <div class=" col-xs-12">
+                            <div class="row clear mt-10 mb-5">
+                                <div class="col-sm-7 clear">
+                                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="zoom" data-option="0.1" type="button" title="Zoom In">
+                                        <span class="docs-tooltip inline-block" data-toggle="tooltip">
+                                            <span class="f-18 line-h-20 icon-zoom-in"></span>
+                                        </span>
+                                    </button>
+                                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="zoom" data-option="-0.1" type="button" title="Zoom Out">
+                                        <span class="docs-tooltip inline-block" data-toggle="tooltip">
+                                            <span class="f-18 line-h-20 icon-zoom-out"></span>
+                                        </span>
+                                    </button>
+                                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="rotate" data-option="-90" type="button" title="Rotate Left">
+                                        <span class="docs-tooltip inline-block" data-toggle="tooltip">
+                                            <span class="f-18 line-h-20 icon-rotate-left"></span>
+                                         </span>
+                                    </button>
+                                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="rotate" data-option="90" type="button" title="Rotate Right">
+                                        <span class="docs-tooltip inline-block" data-toggle="tooltip">
+                                            <span class="f-18 line-h-20 icon-rotate-right"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="col-sm-5 upload-fr clear">
+                                <label style="overflow:hidden;" class="btn btn-upload btn-margin-r3 bbttnn pull-left" for="inputImage" title="Upload image file">
+                                    <input class="sr-only" id="inputImage" type="file" name="file">
+                                    <span class="btn-operate docs-tooltip chose" data-toggle="tooltip">
+                                        选择文件
+                                    </span>
+                                </label>  
+                                <label class="btn btn-operate btn-upload btn-margin-r3 bbttnn pull-left" data-method="getCroppedCanvas" type="button">
+                                    <span class="span-upload docs-tooltip inline-block" data-toggle="tooltip">
+                                        确认上传
+                                    </span>
+                                </label>
+                                <label  class=" btn btn-operate btn-margin-r3 bbttnn inline-block pull-left" type="button">
+                                    <span class="span-upload docs-tooltip inline-block" data-dismiss="modal" id="cancle">
+                                        取消
+                                    </span>
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal fade docs-cropped" id="getCroppedCanvasModal" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" role="dialog" tabindex="-1">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- 绑定手机 -->
+        <div class="show" id="bindphone">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-phone">绑定手机</p>
+                    </div>
+                    <form class="modal-main ">
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 " >
+                                <p>旧手机号:</p>
+                            </div>
+                            <div class="col-xs-7 col-sm-8 pull-left f-14 col-999 pl-10 pr-0 ">
+                                <input type="text " class="ipt-text " placeholder="请输入您的手机号码">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 lab-out">
+                                <p>图形验证码:</p>
+                            </div>
+                            <div class="col-xs-7 col-sm-8 pull-left pos-r pl-10 pr-0">
+                                <input type="text " class="ipt-text " maxlength="4" placeholder="请输入图形验证码" >
+                                <img src="../../img/news/11.jpg" class=" idcode ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class=" col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 ">
+                                 <p class=" ">手机验证码:</p>
+                            </div>
+                            <div class="col-xs-7 col-sm-8 pull-left pos-r pl-10 pr-0">
+                                <input type="text " class="ipt-text " maxlength="6" placeholder="请输入旧手机验证码">
+                                <button class="btn btn-gray f-14  idcode">获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="bor-b-l ">
+                        </div>
+                        <div class="pd-20 ml-10 mr-10 text-right ">
+                            <button class="btn btn-primary f-14 btn-small ">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 绑定邮箱 -->
+        <div class="show" id="email">
+            <div class="modal-dialog clear">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-envelope">绑定邮箱</p>
+                    </div>
+                    <div class="modal-email-content">
+                        <div class="pd-20 ">
+                        <img src="../../img/user/1.jpg" class="full-w">
+                        </div>
+                        <div class="pd-20 ">
+                            <p class="mb-10 line-h-20 f-14">
+                                <span class="modal-msg icon-info-sign ">&nbsp;温馨提示:</span> 
+                               邮件是系统登录时可使用的用户名或找回密码，为了您的账户安全，请先填写您的登录密码后绑定/修改邮件.
+                            </p>
+                        </div>
+                        <div class="clear pd-20">
+                            <div class="col-xs-5 col-sm-3 pull-left text-right f-14 col-999 pd-10 ">
+                                请输入密码：
+                            </div>
+                            <div class="col-xs-7 col-sm-9 pull-left pd-0">
+                                 <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="pd-20  text-right ">
+                            <button class="btn btn-primary f-14 btn-small emailnext-v1 " >下一步</button>
+                        </div>
+                    </div>
+                    <div class="modal-email-content dis-n">
+                        <div class="pd-20">
+                            <img src="../../img/user/2.jpg" class="full-w">
+                        </div>
+                        <div class="clear pd-20  ">
+                            <div class="col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 ">
+                                新邮箱：
+                            </div>
+                            <div class="col-xs-8 col-sm-9 pull-left pd-0">
+                                 <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="pd-20 text-right ">
+                            <button class="btn btn-primary f-14 btn-small emailnext-v2" >下一步</button>
+                        </div>
+                    </div>
+                    <div class="modal-email-content dis-n">
+                        <div class="pd-20 ">
+                            <img src="../../img/user/3.jpg" class="full-w">
+                        </div>
+                        <div class="pd-20 ">
+                            <p class="mb-10 line-h-25 f-20">
+                               邮件验证码发送成功，请在48小时内点击激活
+                            </p>
+                        </div>
+                        <div class="pd-20 text-right ">
+                            <button class="btn btn-primary f-14 btn-small emailcancel " >取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 设置资金密码 -->
+        <div class="show" id="bankroll">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-credit-card">修改资金密码</p>
+                    </div>
+                    <form class="modal-main ">
+                        <p class="mb-10 ">
+                            <span class="modal-msg icon-info-sign ">&nbsp;温馨提示:</span> 
+                            资金密码是系统操作资金时使用的密码，为了您的账户安全，请先修改资金密码后使用当您初次设置资金密码时，“原资金密码”则无需输入
+                        </p>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-5 col-sm-3 pull-left text-right f-14 col-999 pd-10 " ">
+                                原资金密码：
+                            </div>
+                            <div class="col-xs-7 col-sm-9 pull-left " ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-5 col-sm-3 pull-left text-right f-14 col-999 pd-10 " ">
+                                新密码：
+                            </div>
+                            <div class="col-xs-7 col-sm-9 pull-left " ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-5 col-sm-3 pull-left text-right f-14 col-999 pd-10 " ">
+                                确认密码：
+                            </div>
+                            <div class="col-xs-7 col-sm-9 pull-left " ">
+                                <input type="text " class="ipt-text ">
+                            </div>
+                        </div>
+                        <div class="bor-b-l ">
+                        </div>
+                        <div class="pd-20 ml-10 mr-10 text-right ">
+                            <button class="btn btn-primary f-14 btn-small ">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 找回资金密码 -->
+        <div class="show" id="findbankpwd">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button " class="close-mod ">×</button>
+                        <p class="icon-credit-card">找回资金密码</p>
+                    </div>
+                    <form class="modal-main ">
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 lab-out" >
+                                <p>手机号:</p>
+                            </div>
+                            <div class="col-xs-7 col-sm-8 pull-left f-14 col-999 pl-10 pr-0 ">
+                                <input type="text " class="ipt-text " placeholder="请输入您的手机号码">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class="col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 lab-out">
+                                <p>图形验证码:</p>
+                            </div>
+                            <div class="col-xs-7 col-sm-8 pull-left pos-r pl-10 pr-0">
+                                <input type="text " class="ipt-text " maxlength="4" placeholder="请输入图形验证码" >
+                                <img src="../../img/news/11.jpg" class=" idcode ">
+                            </div>
+                        </div>
+                        <div class="row clear mb-15 ">
+                            <div class=" col-xs-4 col-sm-3 pull-left text-right f-14 col-999 pd-10 ">
+                                 <p class=" ">手机验证码:</p>
+                            </div>
+                            <div class="col-xs-7 col-sm-8 pull-left pos-r pl-10 pr-0">
+                                <input type="text " class="ipt-text " maxlength="6" placeholder="请输入旧手机验证码">
+                                <button class="btn btn-gray f-14  idcode">获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="bor-b-l ">
+                        </div>
+                        <div class="pd-20 ml-10 mr-10 text-right ">
+                            <button class="btn btn-primary f-14 btn-small ">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+        <!-- jquery文件 -->
+        <script src="../../js/comm/jquery.min.js "></script>
+        <!-- base的js文件 -->
+        <script src="../../js/comm/mining.js "></script>
+        <!-- cutImg文件 -->
+        <script src="../../ctrl/cutImg/js/exif-js/exif.js "></script>
+        <script src="../../ctrl/outerHtml.js "></script>
+        <script type="text/javascript " src="../../ctrl/cutImg/dist/cropper.js "></script>
+        <script type="text/javascript " src='../../ctrl/cutImg/js/LocalResizeIMG.js'></script>
+        <script type="text/javascript " src='../../ctrl/cutImg/js/mobileBUGFix.mini.js'></script>
+        <script type="text/javascript " src="../../ctrl/cutImg/js/lrz/lrz.bundle.js "></script>
+        <script type="text/javascript " src="../../ctrl/cutImg/js/main_res.js "></script>
+        <!-- 弹框文件 -->
+        <script type="text/javascript " src="../../ctrl/layer/layer.js "></script>
+        <script type="text/javascript " src="../../js/comm/add_ck.js "></script>
+        <script type="text/javascript " src="../../js/mall/opt_res.js "></script>
+        <!-- 弹出时间样式文件 -->
+        <script type="text/javascript " src="../../ctrl/laydate/laydate.js "></script>
+        <!-- 页内样式 -->
+        <script>
+            /*邮箱的选项卡切换*/
+            $(document).ready(function(){
+              $(".emailnext-v1").click(function(){
+                $(".modal-email-content").hide();
+                $(".modal-email-content").eq(1).show();
+              });
+              $(".emailnext-v2").click(function(){
+                $(".modal-email-content").hide();
+                $(".modal-email-content").eq(2).show();
+              });
+              $(".email").click(function(){
+                $('#email').fadeToggle(200);
+                $(".modal-email-content").hide();
+                $(".modal-email-content").eq(0).show();
+              });
+              $(".emailcancel").click(function(){
+                $(".show").hide()
+              });
+            });
+        </script>
+</body>
+
+</html>

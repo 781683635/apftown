@@ -1,0 +1,22 @@
+@charset"utf-8";
+/*首页*/
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+h1{text-indent: -9999px;margin-top: -35px;}
+nav .cur{color:#578300;border-bottom:1px solid #578300}
+.cur i{color:#578300}
+/*等高对齐*/
+.dis-row{display: table-row}
+.dis-tab-c{display: table-cell;vertical-align: middle;}
+/*电影胶片背景*/
+.gradient-black{
+  background: -webkit-linear-gradient(left,#000 0%,#666B72 50%, #000 100%);
+  background: -o-linear-gradient(right,#000 0%,#666B72 50%, #000 100%);
+  background: -moz-linear-gradient(right,#000 0%,#666B72 50%, #000 100%);
+  background: linear-gradient(to right, #000 0%, #666B72 50%, #000 100%)
+}
+/*list风格切换*/
+.list-style2{width:100%}
+.list-style2 img{width:32%;float: left}
+.list-style2 .list-info{width: 68%;float: left}
+.list-style2 .h-15{height:30px;word-wrap: break-word; white-space: normal; word-break: break-all}
+.list-style2 .list-info p{padding:0;margin:0 0 5px 5px;}

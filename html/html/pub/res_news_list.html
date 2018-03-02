@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==========meta开始========== -->
+    <!-- 清空浏览器本地缓存 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 本网页关键字和关键内容 -->
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <!-- 采用webkit内核(急速内核) -->
+    <meta name="renderer" content="webkit">
+    <!-- 移动屏幕的缩放初始缩放比例1.0，不允许用户缩放，最小比例1.0，最大比例1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- 网站开启对web app的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- web app顶部状态条的颜色为灰色半透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 忽略页面中的数值识别为电话号码 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- web app设备添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- uc浏览器强制全屏   -->
+    <meta name="full-screen" content="yes">
+    <!-- 以utf-8格式编码 -->
+    <meta charset="UTF-8">
+    <!-- ==========meta结束========== -->
+    <!-- ==========link开始========== -->
+    <!-- 网页前面的小图标 -->
+    <link rel="icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+    <!-- 基本样式文件 -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/user.css">
+    <!-- 字体样式文件 -->
+    <link rel="stylesheet" href="../../ctrl/font/css/font-awesome.min.css">
+    <!-- ==========link结束========== -->
+    <title>新闻列表页</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clear mb-20 pb-20 clear">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-10 mb-10">
+                <div class="clear">
+                    <div class="col-sm-2 pd-10">
+                        <button class=" btn btn-small gradient-primary">添加</button>
+                    </div>
+                    <div class="col-sm-2 pd-10">
+                        <button class=" btn btn-small gradient-primary">修改</button>
+                    </div>
+                    <div class="col-sm-2 pd-10">
+                        <button class=" btn btn-small gradient-primary">删除</button>
+                    </div>
+                    <div class="col-sm-5 pd-10 pl-0 pull-right">
+                        <div class="search">
+                            <div class="search-con">
+                                <input id="searchTitle" type="text" class="ipt-text size-small" placeholder="输入商品名称">
+                                <button class="sea-btn-v2 btn btn-small gradient-primary" onclick="search('')">搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear mb-20 pb-20">
+                    <table cellspacing="0" pd-10 class="bor-primary full-w text-center newline line-h-20 ">
+                        <caption class="f-16">
+                            新闻列表
+                        </caption>
+                        <thead class="bg-l-blue">
+                            <tr class="">
+                                <th class="col-1">
+                                    <label>
+                                        <input type="checkbox"><span class="hidden-sm">全选</span></label>
+                                </th>
+                                <th class="col-2">编号</th>
+                                <th class="col-2">时间</th>
+                                <th class="newlist_media_1">图片</th>
+                                <th class="col-3 ">标题</th>
+                                <th class="newlist_media_2">操作</th>
+                            </tr>
+                        </thead>
+                        <tr class="bg-l-green ">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="pd-5">0937d0a5a78f489595432427d2e2509c</td>
+                            <td class="pd-5">1489744304000</td>
+                            <td class="pd-5">
+                                <p class="text-line-2">http://192.168ttp://192.168.1.2ttp://192.168.1.2ttp://192.168.1.2.1.248:80/upload/7e/2a/7e2a3ba9deb944da846f98a8d3dbc445.jpg</p>
+                            </td>
+                            <td class="pd-5">
+                                <p class="text-line-2">三亚亚太金融小镇揭牌，特色小镇又添新成员</p>
+                            </td>
+                            <td class="pl-10 pr-10">
+                                <div class="sel-ck search text-center" onclick="downClick(this)" id="layer">
+                                    <div class="bg-primary"> <span class="inline-block icon-edit text-center f-16 col-white"></span> <i class="icon-caret-down f-20 col-white"></i> </div>
+                                    <ul class="opt opt-ck">
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">修改</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">下架</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">删除</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-white ">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="pd-5">0937d0a5a78f489595432427d2e2509c</td>
+                            <td class="pd-5">1489744304000</td>
+                            <td class="pd-5">
+                                <p class="text-line-2">http://192.168ttp://192.168.1.2ttp://192.168.1.2ttp://192.168.1.2.1.248:80/upload/7e/2a/7e2a3ba9deb944da846f98a8d3dbc445.jpg</p>
+                            </td>
+                            <td class="pd-5">
+                                <p class="text-line-2">三亚亚太金融小镇揭牌，特色小镇又添新成员</p>
+                            </td>
+                            <td class="pl-10 pr-10">
+                                <div class="sel-ck search text-center" onclick="downClick(this)" id="layer">
+                                    <div class="bg-primary"> <span class="inline-block icon-edit text-center f-16 col-white"></span> <i class="icon-caret-down f-20 col-white"></i> </div>
+                                    <ul class="opt opt-ck">
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">修改</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">下架</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">删除</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-l-green ">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="pd-5">0937d0a5a78f489595432427d2e2509c</td>
+                            <td class="pd-5">1489744304000</td>
+                            <td class="pd-5">
+                                <p class="text-line-2">http://192.168ttp://192.168.1.2ttp://192.168.1.2ttp://192.168.1.2.1.248:80/upload/7e/2a/7e2a3ba9deb944da846f98a8d3dbc445.jpg</p>
+                            </td>
+                            <td class="pd-5">
+                                <p class="text-line-2">三亚亚太金融小镇揭牌，特色小镇又添新成员</p>
+                            </td>
+                            <td class="pl-10 pr-10">
+                                <div class="sel-ck search text-center" onclick="downClick(this)" id="layer">
+                                    <div class="bg-primary"> <span class="inline-block icon-edit text-center f-16 col-white"></span> <i class="icon-caret-down f-20 col-white"></i> </div>
+                                    <ul class="opt opt-ck">
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">修改</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">下架</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">删除</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-white ">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="pd-5">0937d0a5a78f489595432427d2e2509c</td>
+                            <td class="pd-5">1489744304000</td>
+                            <td class="pd-5">
+                                <p class="text-line-2">http://192.168ttp://192.168.1.2ttp://192.168.1.2ttp://192.168.1.2.1.248:80/upload/7e/2a/7e2a3ba9deb944da846f98a8d3dbc445.jpg</p>
+                            </td>
+                            <td class="pd-5">
+                                <p class="text-line-2">三亚亚太金融小镇揭牌，特色小镇又添新成员</p>
+                            </td>
+                            <td class="pl-10 pr-10">
+                                <div class="sel-ck search text-center" onclick="downClick(this)" id="layer">
+                                    <div class="bg-primary"> <span class="inline-block icon-edit text-center f-16 col-white"></span> <i class="icon-caret-down f-20 col-white"></i> </div>
+                                    <ul class="opt opt-ck">
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">修改</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">下架</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">删除</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-l-green ">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="pd-5">0937d0a5a78f489595432427d2e2509c</td>
+                            <td class="pd-5">1489744304000</td>
+                            <td class="pd-5">
+                                <p class="text-line-2">http://192.168ttp://192.168.1.2ttp://192.168.1.2ttp://192.168.1.2.1.248:80/upload/7e/2a/7e2a3ba9deb944da846f98a8d3dbc445.jpg</p>
+                            </td>
+                            <td class="pd-5">
+                                <p class="text-line-2">三亚亚太金融小镇揭牌，特色小镇又添新成员</p>
+                            </td>
+                            <td class="pl-10 pr-10">
+                                <div class="sel-ck search text-center" onclick="downClick(this)" id="layer">
+                                    <div class="bg-primary"> <span class="inline-block icon-edit text-center f-16 col-white"></span> <i class="icon-caret-down f-20 col-white"></i> </div>
+                                    <ul class="opt opt-ck">
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">修改</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">下架</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">删除</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-white ">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="pd-5">0937d0a5a78f489595432427d2e2509c</td>
+                            <td class="pd-5">1489744304000</td>
+                            <td class="pd-5">
+                                <p class="text-line-2">http://192.168ttp://192.168.1.2ttp://192.168.1.2ttp://192.168.1.2.1.248:80/upload/7e/2a/7e2a3ba9deb944da846f98a8d3dbc445.jpg</p>
+                            </td>
+                            <td class="pd-5">
+                                <p class="text-line-2">三亚亚太金融小镇揭牌，特色小镇又添新成员</p>
+                            </td>
+                            <td class="pl-10 pr-10">
+                                <div class="sel-ck search text-center" onclick="downClick(this)" id="layer">
+                                    <div class="bg-primary"> <span class="inline-block icon-edit text-center f-16 col-white"></span> <i class="icon-caret-down f-20 col-white"></i> </div>
+                                    <ul class="opt opt-ck">
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">修改</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">下架</li>
+                                        <li class="pd-5 text-center hov-primary cur-p bor-b-l" onclick="">删除</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========script开始========== -->
+    <!-- jquery文件 -->
+    <script>
+        
+    </script>
+    <script src="../../js/comm/jquery.min.js"></script>
+    <!-- base的js文件 -->
+    <script src="../../js/comm/mining.js"></script>
+    <!-- ==========script结束========== -->
+</body>
+
+</html>

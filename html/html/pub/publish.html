@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ==========meta开始========== -->	
+<!-- 清空浏览器本地缓存 -->
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+<!-- 本网页关键字和关键内容 -->
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+<!-- 采用webkit内核(急速内核) -->
+	<meta name="renderer" content="webkit">
+<!-- 移动屏幕的缩放初始缩放比例1.0，不允许用户缩放，最小比例1.0，最大比例1.0 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- 网站开启对web app的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- web app顶部状态条的颜色为灰色半透明 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 忽略页面中的数值识别为电话号码 -->
+	<meta name="format-detection" content="telephone=no">
+<!-- web app设备添加到主屏幕后全屏显示 -->
+	<meta name="apple-touch-fullscreen" content="yes">
+<!-- uc浏览器强制全屏	 -->
+	<meta name="full-screen" content="yes">
+<!-- 以utf-8格式编码 -->
+	<meta charset="UTF-8">
+<!-- ==========meta结束========== -->
+<!-- ==========link开始========== -->		
+<!-- 网页前面的小图标 -->
+	<link rel="icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://www.miningcircle.com/favicon.ico" type="image/x-icon">
+<!-- 基本样式文件 -->
+	<link rel="stylesheet" href="../../css/base.css">
+<!-- 字体样式文件 -->
+	<link rel="stylesheet" href="../../ctrl/font/css/font-awesome.min.css">
+<!-- form表单样式文件 -->
+	<link rel="stylesheet" type="text/css" href="../../css/sky-forms.css">
+<!-- 弹出时间样式文件 -->
+	<link rel="stylesheet" type="text/css" href="../../ctrl/laydate/need/laydate.css">
+<!-- cutImg样式文件 -->
+	<link rel="stylesheet" href="../../ctrl/cutImg/css/normalize.css" />
+	<link rel="stylesheet" href="../../ctrl/cutImg/css/default.css">
+	<link rel="stylesheet" href="../../ctrl/cutImg/dist/cropper.css">
+	<link rel="stylesheet" href="../../ctrl/cutImg/css/main.css">
+<!-- ==========link结束========== -->
+<!-- ==========script结束========== -->
+<!-- ck文件 -->
+	<script type="text/javascript" src="../../ctrl/ck/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="../../ctrl/ck/js/ck.js"></script>
+	<script type="text/javascript" src="../../ctrl/ck/ckfinder2.3.1/ckfinder.js"></script>
+<!-- ==========script结束========== -->
+
+	<title>发布页</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row clear mb-20 pb-20">
+			<form class="col-md-12 com-lg-12 col-sm-12 com-xs-12 pd-0" method="post" novalidate="novalidate">
+				<!-- 上传图片 -->
+				<div class="mb-15 mt-20 maimglst">
+					<div class="text-center mb-15 resImg" aratio="1" title="resImg">
+						<a href="#" class="upload uploadbg" toggle="modal" data-target="#myModal" onclick="show('show_cutImg')">
+							<img src="" alt="" class="uploadimg" name="rImg">
+						</a>
+					</div>
+					<div class="upload-product resChildImg" title="resChildImg" aratio="1">						
+						<a href="#" class="productimg uploadbg mr-15" onclick="show('show_cutImg')"></a>
+					</div>
+						<p class="mt-5 mb-5 text-center line-h-20">
+							上传图片尺寸建议<span class="col-red">800*800</span>px
+						</p>
+				</div>
+				<!-- 分类 -->	
+				<div class="f-13 mt-10 clear">
+					<div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 text-right pull-left pr-0 line-h-20">
+						<label class="inline-block ipt-label"><em class="col-red">*&nbsp;</em>分类:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pd-0 ">
+						<div class="col-xs-12 col-sm-4 mb-10 pl-0 pr-5">
+							<div>
+								<div class="sel sel-ck" name="code">
+								<div class="s-input radius0"><span>请选择一级分类</span><i class="icon-caret-down"></i></div>
+								<ul class="opt opt-ck line-h-20" id="code" onchange="setResProp(this.value,&#39;city&#39;)" style="display: none;">
+									<li value="0">一级分类一</li>
+									<li value="1">一级分类二</li>
+									<li value="2">一级分类三</li>
+								</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 mb-10 pl-0 pr-5">
+							<div>
+								<div class="sel sel-ck" name="code2">
+									<div class="s-input radius0"><span>请选择二级分类</span><i class="icon-caret-down"></i></div>
+									<ul class="opt opt-ck" id="code2" onchange="setResProp(this.value,&#39;county&#39;)" style="display: none;">
+									</ul>
+								</div>
+							</div>
+						</div> 
+						<div class="col-xs-12 col-sm-4 mb-10 pl-0 pr-5">
+							<div>
+								<div class="sel sel-ck" name="code3">
+									<div class="s-input radius0"><span>请选择三级分类</span><i class="icon-caret-down"></i></div>
+									<ul class="opt opt-ck" id="code3" style="display: none;">
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- 标题 -->
+				<div class="f-13 mb-15 mt-15 clear">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">*&nbsp;</em>标题:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<input type="text" name="rl.title" value="" class="ipt-text radius0" placeholder="">
+					</div>
+				</div>
+			<!-- 副标题 -->
+				<div class="f-13 mb-15 mt-15 clear">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">&nbsp;</em>副标题:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<input type="text" name="rl.title" value="" class="ipt-text radius0" placeholder="">
+					</div>
+				</div>
+			<!-- 售价 -->
+				<div class="f-13 mb-15 mt-15 clear">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">*&nbsp;</em>售价(元):</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<input type="text" name="rl.title" value="" class="ipt-text radius0" placeholder="">
+					</div>
+				</div>
+			<!-- 原价 -->
+				<div class="f-13 mb-15 mt-15 clear ">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">&nbsp;</em>原价(元):</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<input type="text" name="rl.title" value="" class="ipt-text radius0" placeholder="">
+					</div>
+				</div>
+			<!-- 库存 -->
+				<div class="f-13 mb-15 mt-15 clear">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">*&nbsp;</em>库存:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<input type="text" name="rl.title" value="" class="ipt-text radius0" placeholder="0">
+					</div>
+				</div>
+			<!-- 单位 -->
+				<div class="f-13 mb-15 mt-15 clear ">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">*&nbsp;</em>单位:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<div class="sel sel-ck" name="code">
+						<div class="s-input radius0"><span>请选择</span><i class="icon-caret-down"></i></div>
+						<ul class="opt opt-ck line-h-20" id="code" onchange="setResProp(this.value,&#39;city&#39;)" style="display: none;">
+							<li value="0">件</li>
+							<li value="1">个</li>
+							<li value="2">吨</li>
+							<li value="3">公斤</li>
+							<li value="4">克</li>
+							<li value="5">方</li>
+							<li value="6">套</li>
+							</ul>
+							</div>
+					</div>
+				</div>
+			<!-- 起售数量 -->
+				<div class="f-13 mb-15 mt-15 clear">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20">
+						<label class="ipt-label inline-block"><em class="col-red">*&nbsp;</em>起售数量:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<input type="text" name="rl.title" value="" class="ipt-text radius0" placeholder="1">
+					</div>
+				</div>
+			<!-- 商品概述 -->
+				<div class="f-13 mb-15 mt-15 clear pr-5">
+					<div class="col-xs-3 col-sm-2 col-md-1 text-right pull-left pd-0 line-h-20 ">
+						<label class="ipt-label inline-block"><em class="col-red">*&nbsp;</em>商品概述:</label>
+					</div>
+					<div class="col-xs-9 col-sm-10 col-md-11 pl-0 pr-5">
+						<textarea class="textarea textarea-numberbar radius0" name="rl.vdesc" cols="30" rows="10"></textarea>
+					</div>
+				</div>
+			<!-- 富文本框 -->
+				<div class="textareas mb-15 ">			
+				   <div class="ipt-group clearfix pl-5 pr-5">
+				   			   			<div class="click-bit pull-left mr-10 mb-5" name="0" ">
+				   					   		<input type="text" class="ipt-text radius0 gradient-bg" value="产品详情" name="rc.name" maxlength="6">
+				   					   		<i class="icon-remove-sign f-16 close"></i>
+				   		</div>
+				   		<div class="click-bit pull-left mr-10 mb-5" name="1" ">
+				   					   		<input type="text" class="ipt-text radius0 gradient-bg" value="规格参数" name="rc#1.name" maxlength="6">
+				   					   		<i class="icon-remove-sign f-16 close"></i>
+				   		</div>
+				   		<div class="click-bit pull-left mr-10 mb-5" name="2" ">
+				   					   		<input type="text" class="ipt-text radius0 gradient-bg" value="运送说明" name="rc#2.name" maxlength="6">
+				   					   		<i class="icon-remove-sign f-16 close"></i>
+				   		</div>
+				   		<div class="click-bit pull-left mr-10 mb-5" name="3" ">
+				   					   		<input type="text" class="ipt-text radius0 gradient-bg" value="退货换货" name="rc#3.name" maxlength="6">
+				   					   		<i class="icon-remove-sign f-16 close"></i>
+				   		</div>
+				   			   			<i class="add icon-plus pull-left f-20 gradient-bg" ></i>
+				   	</div>
+					
+
+			   		<div class="tabcons pl-5 pr-5">
+			   			<div class="tabcon">
+				   			<div class=" fade in active" id="profile1">
+								<textarea id="content1" cols="80" name="rc.content" rows="10"></textarea>
+								<script type="text/javascript">
+									    var editor1 = null;
+								        editor1 = CKEDITOR.replace( 'content1', {
+								            customConfig:'config.js'
+								        });
+								        CKFinder.setupCKEditor( editor1, './ckfinder2.3.1/' ); 
+								</script>
+							</div>
+						</div>
+			   		</div>
+					<!-- 修改处 -->
+						<div class="tabcon pl-5 pr-5">
+				   			<div class=" fade in active" id="profile1">
+								<textarea id="content2" cols="80" name="rc#1.content" rows="10">${resInfo.cardList[1].content }</textarea>
+								<script type="text/javascript">
+								    var editor2 = null;
+							        editor2 = CKEDITOR.replace( 'content2', {
+							            customConfig:'config.js'
+							        });
+							        CKFinder.setupCKEditor( editor1, './ckfinder2.3.1/' ); 
+								</script>
+							</div>
+						</div>
+						<div class="tabcon pl-5 pr-5">
+				   			<div class=" fade in active" id="profile1">
+								<textarea id="content3" cols="80" name="rc#2.content" rows="10">${resInfo.cardList[2].content }</textarea>
+								<script type="text/javascript">
+									    var editor3 = null;
+								        editor3 = CKEDITOR.replace( 'content3', {
+								            customConfig:'config.js'
+								        });
+								        CKFinder.setupCKEditor( editor1, './ckfinder2.3.1/' ); 
+								</script>
+							</div>
+						</div>
+						<div class="tabcon pl-5 pr-5">
+				   			<div class=" fade in active" id="profile1">
+								<textarea id="content4" cols="80" name="rc#3.content" rows="10">${resInfo.cardList[3].content }</textarea>
+								<script type="text/javascript">
+									    var editor4 = null;
+								        editor4 = CKEDITOR.replace( 'content4', {
+								            customConfig:'config.js'
+								        });
+								        CKFinder.setupCKEditor( editor1, './ckfinder2.3.1/' ); 
+								</script>
+							</div>
+						</div>
+						<!-- 修改处end -->
+
+
+
+				</div>
+				<button id="optres" type="button" class="btn radius0 btn-primary btn-normal pull-right mr-5" >提交</button>
+			</form>
+		</div>
+		<!-- 弹出选择图片上传框 -->
+		<div class="show" id="show_cutImg">
+			<div class="modal-dialog">	
+			    <div class="modal-content clear" id="myModal">
+			        <div class="modal-body clear">
+			            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0px;">
+			                <div class="img-container">
+			                    <img src="" alt="点击下面选择文件按钮进行选择文件！">
+			                    <div class="img-type" style="display:none"></div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="modal-footer2 clear">
+			            <div class=" col-xs-12">
+			            	<div class="row clear mt-10 mb-5">
+				        		<div class="col-sm-7 clear">
+				                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="zoom" data-option="0.1" type="button" title="Zoom In">
+				                    	<span class="docs-tooltip inline-block" data-toggle="tooltip">
+				                        	<span class="f-18 line-h-20 icon-zoom-in"></span>
+				                    	</span>
+				                    </button>
+				                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="zoom" data-option="-0.1" type="button" title="Zoom Out">
+				                    	<span class="docs-tooltip inline-block" data-toggle="tooltip">
+				                        	<span class="f-18 line-h-20 icon-zoom-out"></span>
+				                    	</span>
+				                    </button>
+				                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="rotate" data-option="-90" type="button" title="Rotate Left">
+				                   		<span class="docs-tooltip inline-block" data-toggle="tooltip">
+				                        	<span class="f-18 line-h-20 icon-rotate-left"></span>
+				                   		 </span>
+				                    </button>
+				                    <button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="rotate" data-option="90" type="button" title="Rotate Right">
+				                    	<span class="docs-tooltip inline-block" data-toggle="tooltip">
+				                        	<span class="f-18 line-h-20 icon-rotate-right"></span>
+				                    	</span>
+				                    </button>
+									<button class="btn btn-operate btn-margin-t3 bbttnn operate" data-method="reset" type="button" title="Reset">
+									    <span class="docs-tooltip inline-block" data-toggle="tooltip">
+											<span class="icon icon-refresh "></span>
+									    </span>
+									</button>
+
+				                </div>
+				                <div class="col-sm-5 upload-fr clear">
+			                    <label style="overflow:hidden;" class="btn btn-upload btn-margin-r3 bbttnn pull-left" for="inputImage" title="Upload image file">
+			                        <input class="sr-only" id="inputImage" type="file" name="file">
+			                        <span class="btn-operate docs-tooltip chose" data-toggle="tooltip">
+			                            选择文件
+			                        </span>
+			                    </label>  
+			                    <label class="btn btn-operate btn-upload btn-margin-r3 bbttnn pull-left" data-method="getCroppedCanvas" type="button">
+			                        <span class="span-upload docs-tooltip inline-block" data-toggle="tooltip">
+			                            确认上传
+			                        </span>
+			                    </label>
+			                    <label class="btn btn-operate btn-margin-r3 bbttnn inline-block pull-left" type="button">
+			                        <span class="span-upload docs-tooltip inline-block" data-dismiss="modal" id="cancle">
+			                            取消
+			                        </span>
+			                    </label>
+				                </div>
+			            	</div>
+			            </div>
+			            
+			            <div class="modal fade docs-cropped" id="getCroppedCanvasModal" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" role="dialog" tabindex="-1">
+			            </div>
+			        </div>
+			    </div> 	
+			</div>
+		</div>
+	</div>
+
+<!-- ==========script开始========== -->	
+<!-- jquery文件 -->
+	<script src="../../js/comm/jquery.min.js"></script>
+<!-- base的js文件 -->
+	<script src="../../js/comm/mining.js"></script>
+<!-- cutImg文件 -->
+	<script src="../../ctrl/cutImg/js/exif-js/exif.js"></script>
+	<script src="../../ctrl/outerHtml.js"></script>
+	<script type="text/javascript" src="../../ctrl/cutImg/dist/cropper.js"></script>
+	<script type="text/javascript" src='../../ctrl/cutImg/js/LocalResizeIMG.js'></script>
+	<script type="text/javascript" src='../../ctrl/cutImg/js/mobileBUGFix.mini.js'></script>
+	<script type="text/javascript" src="../../ctrl/cutImg/js/lrz/lrz.bundle.js"></script>
+	<script type="text/javascript" src="../../ctrl/cutImg/js/main_res.js"></script>
+<!-- 弹框文件 -->
+	<script type="text/javascript" src="../../ctrl/layer/layer.js"></script>
+	<script type="text/javascript" src="../../js/comm/add_ck.js"></script>
+	<script type="text/javascript" src="../../js/mall/opt_res.js"></script>
+<!-- 弹出时间样式文件 -->
+	<script type="text/javascript" src="../../ctrl/laydate/laydate.js"></script>
+<!-- ==========script结束========== -->	
+</body>
+</html>
