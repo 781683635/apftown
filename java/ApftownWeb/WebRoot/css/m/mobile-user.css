@@ -1,0 +1,13 @@
+@charset"utf-8";
+.h1{text-indent: -9999px;margin-top: -35px;}
+/* ====用户中心首页css==== */
+.xinyong-phone{background: url(../../img/user/dengji.png) no-repeat;width:18px; height: 16px;display: inline-block;vertical-align: bottom; background-position:center;background-size:auto 100%; position: relative;top:4px}
+.xinyongno-phone{background: url(../../img/user/dengjino.png) no-repeat;width:18px; height: 16px;display: inline-block;vertical-align: bottom; background-position:center;background-size:auto 100%; position: relative;top:4px}
+.img-32{width:32px;height:32px}
+.use-img{width:80px;height:80px;box-shadow:0px 0px 3px 3px #F7E0DF;-webkit-box-shadow:0px 0px 3px 3px #F7E0DF;-moz-box-shadow:0px 0px 3px 3px #F7E0DF}
+/* ====用户中心首页cssEND==== */
+/* ====我的关注页CSS==== */
+.h-50{height: 50px}
+.pos-close{top: 0px; right: 0px}
+.modal-close{width: 200px}
+/* ====我的关注页CSSEND==== */

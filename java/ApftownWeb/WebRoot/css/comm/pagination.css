@@ -1,0 +1,55 @@
+.pagination {float: left;}
+.pagination li{float: left;border: 1px solid #ddd;font-size: 13px;}
+.pagination li:not(:last-child){border-right: none;}
+.pagination>li>.pagination_first,.pagination>li>.pagination_prev,.pagination>li>.pagination_next,.pagination>li>.pagination_last{
+	padding:7px 13px!important;
+}
+.pagination>li>a:hover{text-decoration: none;}
+.pagination .go:hover{text-decoration: underline;}
+.pagination>li>.pagination_first i,.pagination>li>.pagination_prev i,.pagination>li>.pagination_next i,.pagination>li>.pagination_last i{
+	display:block;
+	width:15px;
+	height:15px;	
+}
+.pagination>li>.pagination_first,.pagination>li>.pagination_last{
+	font-size: 15px;
+}
+.pagination .disab{
+	color: #ccc;
+}
+.pagination .disab:hover{
+	color: #ccc;
+}
+.pagination>li>.pagination_prev,.pagination>li>.pagination_next{
+	font-size: 21px;
+}
+.pagination>li>a.pagination_ipt{
+	padding:0px !important;
+}
+.pagination>li>a.pagination_ipt input{
+	width:40px;
+	line-height: 23px;
+	text-align: center;
+}
+.pagination #go-num{border: none;}
+.pagination #go-num a{height:33px;}
+.pagination .go-num{width: 100%;height: 100%;padding:5px;}
+.pagination_v1>li>a,.pagination_v1>li>a:hover{
+	color: #555;
+	font-size:12px;
+}
+.pagination>li>a, .pagination>li>span{
+	padding: 6px 10px!important;
+	height:31px;
+	line-height: 17px;
+	float: left;
+}
+.pagination>li>.pagination_pagenum{
+	font-size:13px;
+	padding:6px 10px!important;
+	color: #555;
+}
+.pagination>li>.pagination_pagenum:hover{
+	background:#fff;
+	color:#555;
+}

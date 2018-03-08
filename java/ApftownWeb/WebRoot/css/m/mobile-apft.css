@@ -1,0 +1,79 @@
+@charset"utf-8";
+/*首页*/
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+h1{text-indent: -9999px;margin-top: -35px;}
+nav .cur{color:#578300;border-bottom:1px solid #578300}
+.cur i{color:#578300}
+/*等高对齐*/
+.dis-row{display: table-row}
+.dis-tab-c{display: table-cell;vertical-align: middle;}
+/*电影胶片背景*/
+.gradient-black{
+  background: -webkit-linear-gradient(left,#000 0%,#666B72 50%, #000 100%);
+  background: -o-linear-gradient(right,#000 0%,#666B72 50%, #000 100%);
+  background: -moz-linear-gradient(right,#000 0%,#666B72 50%, #000 100%);
+  background: linear-gradient(to right, #000 0%, #666B72 50%, #000 100%)
+}
+/*list风格切换*/
+.list-style2{width:100%}
+.list-style2 img{width:32%;float: left}
+.list-style2 .list-info{width: 68%;float: left}
+.list-style2 .h-15{height:30px;word-wrap: break-word; white-space: normal; word-break: break-all}
+.list-style2 .list-info p{padding:0;margin:0 0 5px 5px;}
+/* 主页面图片响应式 */
+@media (max-width:400px) {
+.m-showimg{height: 98px;}
+}
+@media (min-width:401px) and (max-width:767px)  {
+.m-showimg{height: 108px;}
+}
+@media (min-width:768px) and (max-width:1200px) {
+.m-showimg{height: 208px;}
+}
+/* reg_fund页面 */
+.z-1{z-index: 1}
+.z-9{z-index: 9}
+.z-99{z-index: 99}
+.w-20s{width: 20%;}
+.w-57s{width: 57%;}
+.pt-12{padding-top: 12px;}
+.h-34{height: 34px;}
+.f-40{font-size: 40px;}
+.mt-60{margin-top: 60px;}
+.pos-t-2{top: 2px;}
+.pos-t-2l{top: -2px;}
+.pos-t-4l{top: -4px;}
+.pos-t-50l{top: -50px;}
+.family-ht{font-family: "黑体"}
+.f_down{color: black;width: 32px; height: 32px; background: url(../../img/user/download.png); display: block;margin: 5px auto;}
+.f_down:hover{background: url(../../img/user/downloada.png);}
+.f_video{background:transparent url('../../img/mobile/reg_f/townnight.png') 50% 50% no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
+.f_text{border-color: #00E4FF} .f_text:focus,.f_text:hover{border-color: #00A0EA}
+.rgba-50{background: rgba(0,0,0,0.5)}
+.rectangular{border: 1px solid #98838a;box-shadow: 0px 0px 30px #81BFF3;}
+.bg_00a68d{background:#00A68D}
+.bg_00a0e6{background:#00a0e6;}
+.bg_5f52a0{background:#5f52a0;}
+.bg_ea68a2{background:#ea68a2;}
+.bg_eaf8ff{background:#eaf8ff;}
+.bg_00b0ec{background:#00b0ec;}
+.bg_00a4b4{background:#00a4b4;}
+.bg_aacd06{background:#aacd06;}
+.bg_f17c00{background:#f17c00;}
+.bg_e95098{background:#e95098;}
+.bg_7d4698{background:#7d4698;}
+.bg_edf1f1{background:#edf1f1;}
+.bg_eaf8ff{background:#eaf8ff;}
+.bg_a8e2ff{background:#a8e2ff;}
+.bg_fff{background:#fff !important;}
+.bgh_red:hover{background: red;}
+.col_00a68d{color: #00a68d}
+.col_22ac38{color: #22ac38}
+.col_00a5f7{color: #00a5f7}
+.rectanyew{border: 1px solid #f7d187;box-shadow: 0px 0px 10px #f7d187;}
+.bor-r-white{border-right: 1px solid white}
+.bor-b-white{border-bottom: 1px solid white}
+.bor-b-434343{border-bottom: 1px solid #434343}
+.bor-22ac38{border: 1px solid #22ac38;}
+.bor-tlr-none{border-top: none;border-right: none;border-left: none;}
+.bor-tlr-none:focus,.bor-tlr-none:hover{border-top: none;border-right: none;border-left: none;}

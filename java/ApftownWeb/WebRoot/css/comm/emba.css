@@ -1,0 +1,454 @@
+@charset"utf-8";
+/* EMBA主页开始 */
+.bg-d-blue{background: #0E4CA1;}
+.bg-l-blue{background: #00B7EF;}
+.bg-t-blue{background: #4489CA;}
+.bg-w-blue{background: #00A0EA;}
+.col-l-blue{color:#0478E9;}
+.col-d-blue{color:#0E4CA1;}
+.bor-b-red{border-bottom:1px solid #E22332;}
+.bor-d-blue{border-bottom:1px solid #0E4CA1;}
+.mt-40{margin-top:40px;}
+.mt-50{margin-top:50px;}
+.mt-60{margin-top:60px;}
+.mt-70{margin-top:70px;}
+.mb-50{margin-bottom: 50px;}
+.mb-70{margin-bottom: 70px;}
+.ml-43{margin-left:43px;}
+.ml-50{margin-left:50px;}
+.ml-70{margin-left:70px;}
+.ml-80{margin-left:80px;}
+.mr-50{margin-right:50px;}
+.pt-35{padding-top:35px;}
+.pt-50{padding-top:50px;}
+.pt-120{padding-top:120px;}
+.pb-95{padding-bottom: 95px;}
+.pb-120{padding-bottom: 120px;}
+.bor-blue{border:1px solid #21ABE9}
+.img-150{width:150px;height:150px}
+.bor-r-light{border-right:1px solid #f2f2f2}
+.gra-pri3{
+  background:  -webkit-linear-gradient(top,#009EE7 0%,#0075BA 60%,#0063A2 100%);
+  background:  -o-linear-gradient(bottom,#009EE7 0%,#0075BA 60%,#0063A2 100%);
+  background:  -moz-linear-gradient(bottom,#009EE7 0%,#0075BA 60%,#0063A2 100%);
+  background:  linear-gradient(to bottom,#009EE7 0%,#0075BA 60%,#0063A2 100%)
+}
+.cont:hover{text-decoration: underline;color:#0E4CA1;}
+.current p.ppa{background-color:#E02431;}
+
+/* 响应式开始 */
+.container1 {padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto}
+@media (min-width:768px) {
+  .container {width: 788px}
+}
+@media (min-width:992px) {
+  .container {width: 1144px}
+}
+@media (min-width:1200px) {
+  .container1 {width: 970px}
+}
+@media (min-width:1300px) {
+  .container1 {width: 1140px}
+}
+@media print {
+  .container1 {width: auto}
+}
+.row1 {box-sizing: border-box; margin-left: -15px; margin-right: -15px}
+/* 响应式结束 */
+/* 轮播图开始 */
+.rgba-80 {background: rgba(22,143,223,0.6)}
+.swiper1{margin: 0 auto;overflow:hidden;}
+/* 轮播图结束 */
+/* 动画开始 */
+.img-out1{max-height: 240px;}
+.img-out1 img{max-height: 100%;}
+.img-out1 img:hover{	
+	-moz-transform:scale(1.3,1.3) rotate(5deg);  
+	-webkit-transform:scale(1.3,1.3) rotate(5deg);  
+	-o-transform:scale(1.3,1.3) rotate(5deg);
+	transform:scale(1.3,1.3) rotate(5deg);
+}
+.div1{position:relative;animation:myfirst 1s;-webkit-animation:myfirst 1s;}
+@keyframes myfirst
+{
+	0%   { left:-100px; top:0px;}
+	50% { left:0px; top:0px;}
+	75% { left:-40"WebRoot/css/comm/emba.css"px; top:0px;}
+	100% { left:0px; top:0px;}
+}
+@-webkit-keyframes myfirst 
+{
+	0%   { left:-100px; top:0px;}
+	50% { left:0px; top:0px;}
+	75% { left:-40px; top:0px;}
+	100% { left:0px; top:0px;}
+}
+.div2{position:relative;animation:myfirst1 1s;-webkit-animation:myfirst1 1s; }
+@keyframes myfirst1
+{
+	0%   { left:0px; top:100px;}
+	50% { left:0px; top:0px;}
+	75% { left:0px; top:40px;}
+	100% { left:0px; top:0px;}
+}
+@-webkit-keyframes myfirst1 
+{
+	0%   { left:0px; top:100px;}
+	50% { left:0px; top:0px;}
+	75% { left:0px; top:40px;}
+	100% { left:0px; top:0px;}
+}	
+/* 动画结束 */
+/* 轮播图开始 */
+@media (max-width:767px) {
+	.swiper1{width:319px;max-height: 113px;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.swiper1{width:765px;max-height:274px;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.swiper1{width:870px;max-height: 380px;}
+}
+@media (min-width:1200px) { 
+	.swiper1{width:1140px;max-height: 400px;}
+}
+/* 轮播图结束 */
+/* 项目介绍开始 */
+.img-80{width:80px;height:80px;}
+.apif:hover div{display:block;}
+.arli:hover div{display:block;}
+@media (max-width:767px) {
+	.bg-bg1{background: url(../../img/edu-emba/bg1.png) -467px 6px no-repeat;}
+	.bg-bg2{background: url(../../img/edu-emba/bg2.png) -467px 3px no-repeat;}
+	.bg-bg3{background: url(../../img/edu-emba/bg3.png) -76px 0px no-repeat;}
+	.ideap{font-size:14px;}
+	.schmp{font-size:14px;}
+	.couv{padding-left:5px;padding-right:5px;margin-left:15px;}
+	.aspp{font-size:13px;}
+	.schcl{line-height: 25px}
+	.rasp{padding-left:30px;padding-right:30px;}
+	.iconf{font-size:18px;}
+	.titp{font-size:15px;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.bg-bg1{background: url(../../img/edu-emba/bg1.png) -257px 6px no-repeat;}
+	.bg-bg2{background: url(../../img/edu-emba/bg2.png) -257px 3px no-repeat;}
+	.bg-bg3{background: url(../../img/edu-emba/bg3.png) 0px 0px no-repeat;}
+	.ideap{font-size:16px;}
+	.schmp{font-size:16px;}
+	.couv{padding-left:15px;padding-right:15px;margin-left:30px;}
+	.desc{margin-left:30px;}
+	.aspp{font-size:16px;}
+	.schcl{line-height: 25px}
+	.rasp{padding-left:60px;padding-right:60px;}
+	.iconf{font-size:22px;}
+	.titp{font-size:17px;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.bg-bg1{background: url(../../img/edu-emba/bg1.png) -257px 6px no-repeat;}
+	.bg-bg2{background: url(../../img/edu-emba/bg2.png) -257px 3px no-repeat;}
+	.bg-bg3{background: url(../../img/edu-emba/bg3.png) 0px 0px no-repeat;}
+	.ideap{font-size:14px;}
+	.schmp{font-size:14px;}
+	.couv{padding-left:20px;padding-right:20px;margin-left:30px;}
+	.desc{margin-left:30px;}
+	.aspp{font-size:18px;}
+	.schcl{line-height: 30px}
+	.rasp{padding-left:80px;padding-right:80px;}
+	.iconf{font-size:28px;}
+	.titp{font-size:17px;}
+}
+@media (min-width:1200px) {
+	.bg-bg1{background: url(../../img/edu-emba/bg1.png) -65px 6px no-repeat;}
+	.bg-bg2{background: url(../../img/edu-emba/bg2.png) -68px 3px no-repeat;}
+	.bg-bg3{background: url(../../img/edu-emba/bg3.png) -58px 0px no-repeat;}
+	.ideap{font-size:26px;}
+	.schmp{font-size:26px;}
+	.couv{padding-left:50px;padding-right:50px;}
+	.desc{margin-left:50px;}
+	.aspp{font-size:22px;}
+	.schcl{line-height: 35px}
+	.rasp{padding-left:100px;padding-right:100px;}
+	.iconf{font-size:32px;}
+	.titp{font-size:18px;}
+}
+/* 项目介绍结束 */
+/* 师资力量开始 */
+.ani{
+	opacity:0;
+}
+.ani2-2{
+    opacity: 1;
+    -webkit-animation: fadeInUp1 1s 0.5s both;
+    animation: fadeInUp1 1s 0.5s both;
+}
+@keyframes fadeInUp1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+.ani2-3{
+    opacity: 1;
+    -webkit-animation: fadeInUp2 1s 0.5s both;
+    animation: fadeInUp2 1s 0.5s both;
+}
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0,100%);
+        -ms-transform: translate3d(0, 0,100%);
+        transform: translate3d(0, 0,100%)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+.ani2-4{
+    opacity: 1;
+    -webkit-animation: fadeInUp3 1s 0.5s both;
+    animation: fadeInUp3 1s 0.5s both;
+}
+@keyframes fadeInUp3 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+        -ms-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+.chai:hover{box-shadow:0px 0px 12px rgba(0, 0, 0, 0.3);}
+@media (max-width:767px) {
+	.bg-bg6{background: url(../../img/edu-emba/bg6.png) -466px 16px no-repeat;}
+	.bioh{padding-bottom:40px;}
+	.xbin{padding-top:10px;}
+	.xbini{padding-bottom:5px;}
+	.imgx{margin-left:23px;margin-bottom:5px;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.bg-bg6{background: url(../../img/edu-emba/bg6.png) -261px 16px no-repeat;}
+	.bioh{padding-bottom:10px;}
+	.xbin{padding-top:5px;}
+	.xbini{padding-bottom:25px;}
+	.huan{padding-bottom:19px;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.bg-bg6{background: url(../../img/edu-emba/bg6.png) -261px 16px no-repeat;}
+	.xbin{padding-top:5px;}
+	.xbini{padding-bottom:60px;}
+	.huan{padding-bottom:20px;}
+}
+@media (min-width:1200px) {
+	.bg-bg6{background: url(../../img/edu-emba/bg6.png) -70px 16px no-repeat;}
+	.xbin{padding-top:20px;}
+	.xbini{padding-bottom:70px;}
+	.huan{padding-bottom:20px;}
+}
+/* 师资力量结束 */
+/* 课程体系开始 */
+.ppa:hover{background-color:#E02431;}
+@media (max-width:767px) {
+	.coun{margin-top:50px;margin-bottom:50px;}
+	.conte{margin-top:67px;}
+	.bg-bg5{background: url(../../img/edu-emba/bg5.png) -466px 16px no-repeat;}
+	.grep{margin-left:20px;}
+	.degc{line-height: 15px;margin-left:14px;}
+	.lisp2{padding-top:5px;}
+	.cesa{padding-right:8px;}
+	.tfp{font-size:16px;}
+	.tfpl{line-height:20px;}
+	.seam{padding-left:40px;}
+	.nwbc{padding-right:27px;}
+	.netb{margin-right:10px;}
+	.netp{font-size:18px;margin-top:20px;}
+	.netb{margin-top:20px;}
+	.netn{margin-top:20px;margin-bottom:20px;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.coun{margin-top:35px;margin-bottom:35px;}
+	.conte{margin-top:50px;}
+	.bg-bg5{background: url(../../img/edu-emba/bg5.png) -258px 16px no-repeat;}
+	.grep{margin-left:50px;}
+	.degc{line-height: 20px;padding-top:5px;padding-bottom:5px;margin-left:20px;}
+	.lisp2{padding-top:5px;}
+	.cesa{padding-right:0px;}
+	.img1{min-height: 415px;}
+	.img2{min-height: 379px;}
+	.img3{min-height: 205px;}
+	.img4{min-height: 189px;}
+	.img5{min-height: 337px;}
+	.tfp{font-size:16px;padding-left:10px;}
+	.tfpl{line-height:20px;}
+	.seam{padding-left:70px;}
+	.nwbc{padding-right:20px;}
+	.netp{font-size:20px;margin-top:57px;}
+	.netb{margin-top:50px;}
+	.netn{margin-top:40px;margin-bottom:52px;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.coun{margin-left:33px;margin-top:50px;margin-bottom:50px;}
+	.conte{margin-right:40px;margin-top:60px;}
+	.bg-bg5{background: url(../../img/edu-emba/bg5.png) -258px 16px no-repeat;}
+	.grep{margin-left:50px;}
+	.degc{line-height: 20px;padding-top:5px;padding-bottom:5px;margin-left:20px;}
+	.lisp2{padding-top:5px;}
+	.cesa{margin-left:10px;padding-right:0px;}
+	.bioh{padding-bottom:10px;}
+	.tfp{font-size:24px;padding-top:8px;}
+	.tfpl{line-height:25px;}
+	.locd{padding-top:10px;padding-bottom:5px;}
+	.seam{padding-left:90px;}
+	.nwbc{padding-right:20px;}
+	.netp{font-size:26px;margin-top:60px;}
+	.netb{margin-top:60px;}
+	.netn{margin-top:50px;margin-bottom:50px;}
+}
+@media (min-width:1200px) {
+	.coun{margin-left:43px;margin-top:50px;margin-bottom:50px;}
+	.conte{margin-right:50px;margin-top:60px;}
+	.bg-bg5{background: url(../../img/edu-emba/bg5.png) -66px 16px no-repeat;}
+	.coua{margin-left:50px;}
+	.grep{margin-left:50px;}
+	.degc{line-height: 30px;padding-top:20px;padding-bottom:20px;margin-left:20px;}
+	.lisp1{padding-top:5px;}
+	.lisp2{padding-top:20px;}
+	.cesa{margin-left:10px;padding-right:0px;}
+	.bioh{padding-bottom:20px;margin-bottom:10px;}
+	.tfp{font-size:26px;padding-top:10px;}
+	.tfpl{line-height:30px;}
+	.prap{line-height:20px;padding-bottom:10px;color:black;}
+	.locd{padding-top:15px;padding-bottom:5px;}
+	.seam{padding-left:100px;}
+	.nwbc{padding-right:20px;}
+	.netp{font-size:28px;margin-top:70px;}
+	.netb{margin-top:70px;}
+	.netn{margin-top:60px;margin-bottom:70px;}
+}
+/* 课程体系结束 */
+/* 报名须知开始 */
+.btns:hover{touch-action: manipulation;cursor: pointer;background-color: transparent;transition: all .3s ease-in-out;border:1px solid #144696;}
+.btns p:hover{color: #144696;font-weight: bolder;}
+@media (max-width:767px) {
+	.dowl{margin-top:5px;}
+	.bg-bg7{background: url(../../img/edu-emba/bg7.png) -60px 0px no-repeat;}
+	.regf{padding-bottom:55px;}
+	.noti{padding-left:36px;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.dowl{margin-top:30px;}
+	.regm{margin-left:50px;}
+	.adoi{margin:20px;}
+	.bg-bg7{background: url(../../img/edu-emba/bg7.png) -49px 0px no-repeat;}
+	.taap{padding-bottom:145px;}
+	.appl{padding-bottom:120px;}
+	.regf{padding-bottom:46px;}
+	.noti{padding-left:20px;}
+	.siuni{margin-left:20px;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.dowl{margin-top:25px;}
+	.regm{margin-left:50px;}
+	.adoi{margin:20px;}
+	.bg-bg7{background: url(../../img/edu-emba/bg7.png) -267px 0px no-repeat;}
+	.taap{padding-bottom:120px;}
+	.appl{padding-bottom:95px;}
+	.regf{padding-bottom:55px;}
+	.noti{padding-left:20px;}
+	.siuni{margin-left:20px;}
+}
+@media (min-width:1200px) {
+	.dowl{margin-top:20px;}
+	.regm{margin-left:50px;}
+	.adoi{margin:20px;}
+	.bg-bg7{background: url(../../img/edu-emba/bg7.png) -18px 0px no-repeat;}
+	.taap{padding-bottom:120px;}
+	.appl{padding-bottom:95px;}
+	.regf{padding-bottom:45px;}
+	.noti{padding-left:20px;}
+	.siuni{margin-left:20px;}
+}
+/* 报名须知结束 */
+/* 右侧漂浮开始 */
+.siun:hover,.siun:visited{touch-action: manipulation;cursor: pointer;background-color: #053f8e;transition: all .3s ease-in-out;border:1px solid white;color: white;}
+@media (max-width:767px) {
+	.right_float {width: 174px;}
+	.click_more{font-size:13px;}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.right_float {width: 174px;}
+	.click_more{font-size:14px;}
+	.imgs{margin-left:8px;}
+	.mail{margin-left:3px;margin-right:2px;}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.right_float {width: 189px;}
+	.click_more{font-size:15px;}
+	.imgs{margin-left:5px;}
+	.mail{margin-left:5px;margin-right:5px;}	
+}
+@media (min-width:1200px) {
+	.right_float {width: 189px;}
+	.click_more{font-size:16px;}
+	.imgs{margin-left:10px;}
+	.mail{margin-left:5px;margin-right:5px;}
+}
+.right_float_inner{z-index:1000;}
+.right_float {top: 26%;z-in"WebRoot/WEB-INF/webpage/edu/embaRight.jsp"dex: 20;background: rgba(255,255,255,0.8);height: 0;background: rgb(255,255,255)\9;}	       
+.right_float_inner2 .text {left: -244px;width: 244px;background: url(../../img/user/rbg.png);}
+.right_float_inner3 .text div {margin: 25px 0 0 40px;}
+.right_float_inner li {position: relative;height: 44px;border-bottom: 1px solid #8da3ba;cursor: pointer;}	
+.right_float_inner2:hover {background: #004184 url(../../img/user/ion2_h.png) no-repeat center;}
+.right_float_inner1:hover {background: #004184 url(../../img/user/ion1.png)no-repeat center;}
+.right_float_inner3:hover {background: #004184 url(../../img/user/ion3_h.png) no-repeat center;}
+.right_float_inner1:hover .text,.right_float_inner2:hover .text,.right_float_inner3:hover .text,.right_float_inner5:hover .text{display:block;}
+.right_float_inner4:hover .right_float{display:block;}
+.right_float_inner1:hover .text,.right_float_inner2:hover .text,.right_float_inner5:hover .text {height: 44px;z-index: 1000;transition: all 0.5s;}
+.right_float_inner3:hover .text {height:193px;z-index: 1000;transition: all 0.5s;}
+.right_float_inner1 {background: url(../../img/user/ion1_h.png) no-repeat center;}
+.right_float_inner2 {background: url(../../img/user/ion2.png) no-repeat center;}
+.right_float_inner3 {background: url(../../img/user/ion3.png) no-repeat center;}
+.right_float_inner4 {background: url(../../img/user/rr4.png) no-repeat center #004184;background-size: 12px 19px;}
+.right_float_inner5 {background: url(../../img/user/rr4.png) no-repeat center #004184;background-size: 12px 19px;}
+.right_float_inner1 .text, .right_float_inner2 .text { color: rgb(51, 51, 51);   z-index: 2000;width: 194px;height: 0px;line-height: 44px;left: -194px;background: url(../../img/user/r_bg.png);}
+.right_float_inner2 .text {left: -244px;width: 244px;background: url(../../img/user/rbg.png);}
+.right_float_inner3 .text div {margin: 25px 0 0 40px;}
+.right_float_inner3 .text {width: 242px;height: 0px;left: -243px;background: url(../../img/user/rbg3.png);}
+.right_float_inner {width: 35px;right: 0;top: 15%;z-index: 20;border-left: 1px solid #8da3ba;}
+.right_float_inner {border-top: 1px solid #8da3ba;}
+.right_float_inner3 .text div img {margin-right: 6px;}
+.right_float_inner3 .text div a {color: rgb(51, 51, 51);}
+.right_float_inner6:hover .text {height:40px;transition: all 0.4s;display:block;}
+.right_float_inner6 .text {width: 244px;left: -245px;background: url(../../img/user/rbg.png);}
+.box1{height:97px;z-index:98;box-shadow: 0 0 8px rgba(0,0,0,.4);}
+.right_float_tit{height: 46px;line-height: 46px;width: 208px;} 
+.titled{width:176px;}
+.imgsj{bottom:-8px;right:46px;}
+.right_float_tit_r{margin-top:-32px;}
+.bottom_right_fl_top{margin-top:17px;}
+.subbtn{background-color: #004184;}
+.click_more{margin: 10px auto;width: 129px;}
+.bor-blue{ border:solid 1px #8da3ba;}
+.bg-h-blu {background: rgba(0, 51, 104, 0.28);}
+/* 右侧漂浮结束 */
+/* EMBA主页结束 */
+
+
+
+

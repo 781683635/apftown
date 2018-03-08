@@ -1,0 +1,331 @@
+{
+    "cmd": "getmenu",
+    "appinfo": {
+        "applogol": "http://miningcircle.com/img/app/town/apft_long_logo.png",
+        "applogo": "http://miningcircle.com/img/app/town/apft_logo.png",
+        "leftmenu": "http://goldenlend.com/m5/img/app/common/leftmenu.png",
+        "tabbar_my_bg": "http://goldenlend.com/m5/img/app/common/tabbar_my_bg.png",
+        "user_out": "http://goldenlend.com/m5/img/app/common/user_out.png",
+        "actionbar_add_icon": "http://goldenlend.com/m5/img/app/common/actionbar_add_icon.png",
+        "seach": "http://goldenlend.com/m5/img/app/common/seach.png",
+        "pull": "http://goldenlend.com/m5/img/app/common/pull.png",
+        "back": "http://goldenlend.com/m5/img/app/common/back.png",
+        "regurl": "http://apftown.com/regui.do?",
+        "getpwdurl": "http://apftown.com/webuser.do?findpwd",
+        "appname": "亚太金融镇",
+        "website": "http://www.apftown.com",
+        "tel": "400-010-0456",
+        "email": "info@apftown.com",
+        "eq": "http://goldenlend.com/v3/images/dai/gold_down.png",
+        "copyright": "亚太金融研究院 Copyright(R) 2014-2016",
+        "qrcode": {
+            "name": "亚太金融镇App下载",
+            "content": "构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地",
+            "ico": "http://goldenlend.com/v3/images/dai/gold.png",
+            "url": "http://goldenlend.com/app.do?"
+        }
+    },
+    "tabmenu": [
+        {
+            "ico": "http://goldenlend.com/m5/img/app/gold/home.png",
+            "ico_act": "http://goldenlend.com/m5/img/app/gold/home_act.png",
+            "title": "Home",
+            "tint_color": "F3B802",
+            "act": "http://www.apftown.com/index.do?",
+            "type": "p",
+            "addmenu": [
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/set.png",
+                    "title": "Setting",
+                    "act": "#set",
+                    "id": 120
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/msg.png",
+                    "title": "Message",
+                    "act": "#msg",
+                    "id": 100
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete3.png",
+                    "title": "Share",
+                    "act": "#callapp=cmd¿share`title¿亚太金融镇--亚太金融交流合作平台`ico¿http://miningcircle.com/img/app/town/apft_logo.png`con¿以发展海南金融、落地国家战略、促进亚太经济为宗旨，响应国家“一带一路”发展战略，构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地。`ln¿https://itunes.apple.com/cn/app/ya-tai-jin-rong-zhen/id1196177719?mt=8",
+                    "id": 130
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/about.png",
+                    "title": "About us",
+                    "act": "#about",
+                    "id": 140
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/out.png",
+                    "title": "Exit",
+                    "act": "#out",
+                    "id": 130
+                }
+            ],
+            "id": 210
+        },
+        {
+            "ico": "http://goldenlend.com/m5/img/app/gold/dai.png",
+            "ico_act": "http://goldenlend.com/m5/img/app/gold/dai_act.png",
+            "title": "News",
+            "tint_color": "F3B802",
+            "act": "http://www.apftown.com/n/index.do?",
+            "type": "p",
+            "id": 220,
+            "addmenu": [
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/set.png",
+                    "title": "Setting",
+                    "act": "#set",
+                    "id": 120
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/msg.png",
+                    "title": "Message",
+                    "act": "#msg",
+                    "id": 100
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete3.png",
+                    "title": "Share",
+                    "act": "#callapp=cmd¿share`title¿亚太金融镇--亚太金融交流合作平台`ico¿http://miningcircle.com/img/app/town/apft_logo.png`con¿以发展海南金融、落地国家战略、促进亚太经济为宗旨，响应国家“一带一路”发展战略，构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地。`ln¿https://itunes.apple.com/cn/app/ya-tai-jin-rong-zhen/id1196177719?mt=8",
+                    "id": 130
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/about.png",
+                    "title": "About us",
+                    "act": "#about",
+                    "id": 140
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/out.png",
+                    "title": "Exit",
+                    "act": "#out",
+                    "id": 130
+                }
+            ]
+        },
+        {
+            "ico": "http://goldenlend.com/m5/img/app/gold/myloan.png",
+            "ico_act": "http://goldenlend.com/m5/img/app/gold/myloan_act.png",
+            "title": "Education",
+            "tint_color": "F3B802",
+            "act": "http://www.apftown.com/e/index.do?",
+            "type": "p",
+            "id": 230,
+            "addmenu": [
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/set.png",
+                    "title": "Setting",
+                    "act": "#set",
+                    "id": 120
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/msg.png",
+                    "title": "Message",
+                    "act": "#msg",
+                    "id": 100
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete3.png",
+                    "title": "Share",
+                    "act": "#callapp=cmd¿share`title¿亚太金融镇--亚太金融交流合作平台`ico¿http://miningcircle.com/img/app/town/apft_logo.png`con¿以发展海南金融、落地国家战略、促进亚太经济为宗旨，响应国家“一带一路”发展战略，构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地。`ln¿https://itunes.apple.com/cn/app/ya-tai-jin-rong-zhen/id1196177719?mt=8",
+                    "id": 130
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/about.png",
+                    "title": "About us",
+                    "act": "#about",
+                    "id": 140
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/out.png",
+                    "title": "Exit",
+                    "act": "#out",
+                    "id": 130
+                }
+            ]
+        },
+        {
+            "ico": "http://goldenlend.com/m5/img/app/gold/news.png",
+            "ico_act": "http://goldenlend.com/m5/img/app/gold/news_act.png",
+            "title": "Serve",
+            "tint_color": "F3B802",
+            "act": "http://www.apftown.com/s/index.do?",
+            "type": "p",
+            "id": 240,
+            "addmenu": [
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/set.png",
+                    "title": "Setting",
+                    "act": "#set",
+                    "id": 120
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/msg.png",
+                    "title": "Message",
+                    "act": "#msg",
+                    "id": 100
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete3.png",
+                    "title": "Share",
+                    "act": "#callapp=cmd¿share`title¿亚太金融镇--亚太金融交流合作平台`ico¿http://miningcircle.com/img/app/town/apft_logo.png`con¿以发展海南金融、落地国家战略、促进亚太经济为宗旨，响应国家“一带一路”发展战略，构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地。`ln¿https://itunes.apple.com/cn/app/ya-tai-jin-rong-zhen/id1196177719?mt=8",
+                    "id": 130
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/about.png",
+                    "title": "About us",
+                    "act": "#about",
+                    "id": 140
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/out.png",
+                    "title": "Exit",
+                    "act": "#out",
+                    "id": 130
+                }
+            ]
+        },
+        {
+            "ico": "http://www.miningcircle.com/img/m/app/user.png",
+            "ico_act": "http://goldenlend.com/m5/img/app/gold/user_act.png",
+            "title": "Me",
+            "tint_color": "F3B802",
+            "act": "#",
+            "type": "p",
+            "addmenu": [
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/set.png",
+                    "title": "Setting",
+                    "act": "#set",
+                    "id": 120
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/msg.png",
+                    "title": "Message",
+                    "act": "#msg",
+                    "id": 100
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete3.png",
+                    "title": "Share",
+                    "act": "#callapp=cmd¿share`title¿亚太金融镇--亚太金融交流合作平台`ico¿http://miningcircle.com/img/app/town/apft_logo.png`con¿以发展海南金融、落地国家战略、促进亚太经济为宗旨，响应国家“一带一路”发展战略，构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地。`ln¿https://itunes.apple.com/cn/app/ya-tai-jin-rong-zhen/id1196177719?mt=8",
+                    "id": 130
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/about.png",
+                    "title": "About us",
+                    "act": "#about",
+                    "id": 140
+                },
+                {
+                    "ico": "http://goldenlend.com/m5/img/app/common/out.png",
+                    "title": "Exit",
+                    "act": "#out",
+                    "id": 130
+                }
+            ]
+        }
+    ],
+    "usercenter": [
+        {
+            "title": "header",
+            "item": [
+                {
+                    "title": "Information",
+                    "ico": "http://goldenlend.com/m5/img/app/common/lst_money.png",
+                    "act": "http://www.apftown.com/user/userMsg.do?",
+                    "sub_title": "",
+                    "id": 310
+                },
+                {
+                    "title": "Attention",
+                    "ico": "http://goldenlend.com/m5/img/app/common/withdraw.png",
+                    "act": "http://www.apftown.com/user/atten.do?",
+                    "sub_title": "",
+                    "id": 320
+                },
+                {
+                    "title": "History",
+                    "ico": "http://goldenlend.com/m5/img/app/common/recharge.png",
+                    "act": "http://www.apftown.com/index.do?",
+                    "sub_title": "",
+                    "id": 330
+                }
+            ]
+        },
+        {
+            "title": "Manage",
+            "item": [
+                {
+                    "title": "Personal management",
+                    "ico": "http://goldenlend.com/m5/img/app/common/gift.png",
+                    "act": "http://www.apftown.com/user/userAuthen.do?",
+                    "sub_title": "个人账户管理",
+                    "id": 480
+                },
+                {
+                    "title": "News release",
+                    "ico": "http://goldenlend.com/m5/img/app/common/gift.png",
+                    "act": "http://www.apftown.com/user/resAdd.do?",
+                    "sub_title": "亚太金融镇红包",
+                    "id": 500
+                },
+                {
+                    "title": "News management",
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete.png",
+                    "act": "http://www.apftown.com/user/resList.do?",
+                    "sub_title": "通过微信好友，朋友圈，微博，QQ等邀请朋友加入矿业圈",
+                    "id": 520
+                },
+                {
+                    "title": "Registration information",
+                    "ico": "http://goldenlend.com/m5/img/app/common/invete.png",
+                    "act": "http://www.apftown.com/index.do?",
+                    "sub_title": "通过微信好友，朋友圈，微博，QQ等邀请朋友加入矿业圈",
+                    "id": 540
+                }
+            ]
+        },
+        {
+            "title": "Focus on center",
+            "item": [
+                {
+                    "title": "My attention",
+                    "ico": "http://goldenlend.com/m5/img/app/common/safety.png",
+                    "act": "http://www.apftown.com/user/atten.do?",
+                    "sub_title": "我的关注",
+                    "id": 600
+                }
+            ]
+        },
+        {
+            "title": "Red gift certificates",
+            "item": [
+                {
+                    "title": "Share",
+                    "ico": "http://goldenlend.com/m5/img/app/common/safety.png",
+                    "act": "#callapp=cmd¿share`title¿亚太金融镇--亚太金融交流合作平台`ico¿http://goldenlend.com/v3/images/dai/gold.png`con¿以发展海南金融、落地国家战略、促进亚太经济为宗旨，响应国家“一带一路”发展战略，构建亚太金融交流合作平台，创建产融机构在三亚的第二总部基地。`ln¿http://www.goldenlend.com/app.do?",
+                    "sub_title": "分享",
+                    "id": 620
+                }
+            ]
+        },
+        {
+            "title": "Other",
+            "item": [
+                {
+                    "title": "feedback",
+                    "ico": "http://goldenlend.com/m5/img/app/common/safety.png",
+                    "act": "http://www.apftown.com/index.do?",
+                    "sub_title": "意见反馈",
+                    "id": 640
+                }
+            ]
+        }
+    ]
+}

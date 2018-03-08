@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ApftownWeb"
+  id="myeclipse.1488177926625"
+  context-root="/ApftownWeb"
+  j2ee-spec="5.0"
+  archive="ApftownWeb.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,286 @@
+@charset"utf-8";
+/*=======================关于小镇====================*/
+/*绿色背景*/
+.town{background: #f2f5e9}
+.town .bg-pri{background: #578300;}
+.town .bor-pri{border-color: #578300}
+.town .col-pri,.town .col-pri a{color: #578300;}
+.town .hov-pri:hover ,.town .hov-pri a:hover{color: #578300 !important;}
+/*输入框hover效果*/
+.town .ipt:hover,.town .ipt-text:hover,.town .textarea:hover,.town .ipt:focus,.town .ipt-text:focus,.town .textarea:focus {border: solid 1px #96bd45}
+/*输入框hover效果end*/
+.town .gra-pri{
+	background:  -webkit-linear-gradient(top, #5e8510 0%,#5D8211 60%,#49660E 100%);
+  background:  -o-linear-gradient(bottom, #5e8510 0%,#5D8211 60%,#49660E 100%);
+  background:  -moz-linear-gradient(bottom, #5e8510 0%,#5D8211 60%,#49660E 100%);
+  background:  linear-gradient(to bottom, #5e8510 0%,#5D8211 60%,#49660E 100%)
+}
+.town .gra-pri2{
+	background: -webkit-linear-gradient(top, #EDF6DB 0%, #D7E7B4 93% , #9DB866 96%, #6E9229 100%);
+  background: -o-linear-gradient(bottom, #EDF6DB 0%, #D7E7B4 93% , #9DB866 96%, #6E9229 100%);
+  background: -moz-linear-gradient(bottom, #EDF6DB 0%, #D7E7B4 93% , #9DB866 96%, #6E9229 100%);
+  background: linear-gradient(to bottom, #EDF6DB 0%, #D7E7B4 93% , #9DB866 96%, #6E9229 100%)
+}
+/*三角形*/
+.town .triangle{height:0px;width:0px;
+border-left:solid 208px #5e8510;border-top:solid 20px rgba(0,0,0,0)}
+.town .triangle2{height:0px;width:0px;
+border-right:solid 208px #5e8510;border-top:solid 20px rgba(0,0,0,0)}
+/*二级菜单*/
+.town .triangle3{border-left:solid 208px #EDF6DB;}
+.town .subnav span:hover{background:#96bd45;color:#fff ;}
+/*二级菜单选中*/
+.town .cur-list{background:#96bd45;color:#fff}
+
+.town .banner-info .text{border-top: 2px solid #578300;}
+/*swiper进度条*/
+.town .swiper-pagination-progress .swiper-pagination-progressbar{background: #578300}
+/*=======================国际教育====================*/
+.educ{background: rgba(79, 108, 123, 0.47)}
+.educ .bg-pri{background: #1B7FAB;}
+.educ .bor-pri{border-color: #1B7FAB}
+.educ .col-pri,.educ .col-pri a{color: #1B7FAB;}
+.educ .hov-pri:hover ,.educ .hov-pri a:hover{color: #1B7FAB !important;}
+.educ .ipt:hover,.educ .ipt-text:hover,.educ .textarea:hover,.educ .ipt:focus,.educ .ipt-text:focus,.educ .textarea:focus {border: solid 1px #78bfdf}
+.educ .gra-pri{
+	background:  -webkit-linear-gradient(top, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  -o-linear-gradient(bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  -moz-linear-gradient(bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  linear-gradient(to bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%)
+}
+.educ .gra-pri2{
+	background: -webkit-linear-gradient(top, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%);
+	background: -o-linear-gradient(bottom, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%);
+	background: -moz-linear-gradient(bottom, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%);
+	background: linear-gradient(to bottom, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%)
+}
+/*三角形*/
+.educ .triangle{height:0px;width:0px;
+border-left:solid 208px #2F90BA;border-top:solid 20px rgba(0,0,0,0);}
+.educ .triangle2{height:0px;width:0px;
+border-right:solid 208px #2F90BA;border-top:solid 20px rgba(0,0,0,0);}
+/*二级菜单*/
+.educ .triangle3{border-left:solid 208px #DEF1F9;}
+.educ .subnav span:hover{background:#78bfdf;color:#fff ;}
+/*二级菜单选中*/
+.educ .cur-list{background:#78bfdf;color:#fff ;}
+
+.educ .banner-info .text{border-top: 2px solid #1B7FAB;}
+/*swiper进度条*/
+.educ .swiper-pagination-progress .swiper-pagination-progressbar{background: #1B7FAB}
+
+/*=======================EMBA====================*/
+.emba{background:white;}
+.emba .bg-pri{background: #1B7FAB;}
+.emba .bor-pri{border-color: #1B7FAB}
+.emba .col-pri,.emba .col-pri a{color: #1B7FAB;}
+.emba .hov-pri:hover ,.emba .hov-pri a:hover{color: #1B7FAB !important;}
+.emba .ipt:hover,.emba .ipt-text:hover,.emba .textarea:hover,.emba .ipt:focus,.emba .ipt-text:focus,.emba .textarea:focus {border: solid 1px #78bfdf}
+.emba .gra-pri{
+	background:  -webkit-linear-gradient(top, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  -o-linear-gradient(bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  -moz-linear-gradient(bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  linear-gradient(to bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%)
+}
+.emba .gra-pri2{
+	background: -webkit-linear-gradient(top, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%);
+	background: -o-linear-gradient(bottom, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%);
+	background: -moz-linear-gradient(bottom, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%);
+	background: linear-gradient(to bottom, #DEF1F9 0%, #C7E2ED 93% , #A3CAD9 96%, #93C0D1 100%)
+}
+/*三角形*/
+.emba .triangle{height:0px;width:0px;
+border-left:solid 208px #2F90BA;border-top:solid 20px rgba(0,0,0,0);}
+.emba .triangle2{height:0px;width:0px;
+border-right:solid 208px #2F90BA;border-top:solid 20px rgba(0,0,0,0);}
+/*二级菜单*/
+.emba .triangle3{border-left:solid 208px #DEF1F9;}
+.emba .subnav span:hover{background:#78bfdf;color:#fff ;}
+/*二级菜单选中*/
+.emba .cur-list{background:#78bfdf;color:#fff ;}
+
+.emba .banner-info .text{border-top: 2px solid #1B7FAB;}
+/*swiper进度条*/
+.emba .swiper-pagination-progress .swiper-pagination-progressbar{background: #1B7FAB}
+
+
+/*=======================亚太研究====================*/
+.research{background: rgba(2, 2, 2, 0.42)}
+.research .bg-pri{background: #E12431}
+.research .bor-pri{border-color: #E12431}
+.research .col-pri,.research .col-pri a{color: #E12431;}
+.research .hov-pri:hover ,.research .hov-pri a:hover{color: #E12431 !important;}
+.research .ipt:hover,.research .ipt-text:hover,.research .textarea:hover,.research .ipt:focus,.research .ipt-text:focus,.research .textarea:focus {border: solid 1px #ad6fb5}
+.research .gra-pri{
+	background:  -webkit-linear-gradient(top, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%);
+	background:  -o-linear-gradient(bottom, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%);
+	background:  -moz-linear-gradient(bottom, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%);
+	background:  linear-gradient(to bottom, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%)
+}
+.research .gra-pri2{
+	background: -webkit-linear-gradient(top, #FBDEDF 0%, #F7BCBF 93% , #F19FA4 96%, #EE9399 100%);
+	background: -o-linear-gradient(bottom, #FBDEDF 0%, #F7BCBF 93% , #F19FA4 96%, #EE9399 100%);
+	background: -moz-linear-gradient(bottom, #FBDEDF 0%, #F7BCBF 93% , #F19FA4 96%, #EE9399 100%);
+	background: linear-gradient(to bottom, #FBDEDF 0%, #F7BCBF 93% , #F19FA4 96%, #EE9399 100%)
+}
+/*三角形*/
+.research .triangle{height:0px;width:0px;
+border-left:solid 208px #E93A47;border-top:solid 20px rgba(0,0,0,0);}
+.research .triangle2{height:0px;width:0px;
+border-right:solid 208px #E93A47;border-top:solid 20px rgba(0,0,0,0);}
+/*二级菜单*/
+.research .triangle3{border-left:solid 208px #FBDEDF;}
+.research .subnav span:hover{background:#f39197;color:#fff ;}
+/*二级菜单选中*/
+.research .cur-list{background:#f39197;color:#fff ;}
+
+.research .banner-info .text{border-top: 2px solid #E12431;}
+/*swiper进度条*/
+.research .swiper-pagination-progress .swiper-pagination-progressbar{background: #E12431}
+
+/*=========================新闻中心===========================*/
+.news{background: #F0E9ED}
+.news .bg-pri{background: #94429F}
+.news .bor-pri{border-color: #94429F}
+.news .col-pri,.news .col-pri a{color: #94429F;}
+.news .hov-pri:hover ,.news .hov-pri a:hover{color: #94429F !important}
+.news .ipt:hover,.news .ipt-text:hover,.news .textarea:hover,.news .ipt:focus,.news .ipt-text:focus,.news .textarea:focus {border: solid 1px #ad6fb5}
+.news .gra-pri{
+	background:  -webkit-linear-gradient(top, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%);
+	background:  -o-linear-gradient(bottom, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%);
+	background:  -moz-linear-gradient(bottom, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%);
+	background:  linear-gradient(to bottom, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%)
+}
+.news .gra-pri2{
+	background: -webkit-linear-gradient(top, #F0E1F0 0%, #EDDBED 93% , #E0C3E1 96%, #DBB9DD 100%);
+	background: -o-linear-gradient(bottom, #F0E1F0 0%, #EDDBED 93% , #E0C3E1 96%, #DBB9DD 100%);
+	background: -moz-linear-gradient(bottom, #F0E1F0 0%, #EDDBED 93% , #E0C3E1 96%, #DBB9DD 100%);
+	background: linear-gradient(to bottom, #F0E1F0 0%, #EDDBED 93% , #E0C3E1 96%, #DBB9DD 100%)
+}
+/*三角形*/
+.news .triangle{height:0px;width:0px;border-left:solid 208px #A446A4;border-top:solid 20px rgba(0,0,0,0)}
+.news .triangle2{height:0px;width:0px;border-right:solid 208px #A446A4;border-top:solid 20px rgba(0,0,0,0)}
+/*二级菜单*/
+.news .triangle3{border-left:solid 208px #F0E1F0;}
+.news .subnav span:hover{background:#ad6fb5;color:#fff ;}
+/*二级菜单选中*/
+.news .cur-list{background:#ad6fb5;color:#fff ;}
+
+.news .banner-info .text{border-top: 2px solid #94429F;}
+/*swiper进度条*/
+.news .swiper-pagination-progress .swiper-pagination-progressbar{background: #94429F}
+/*=========================服务中心===========================*/
+.serve{background: #B6A073}
+.serve .bg-pri{background: #ffab00}
+.serve .bor-pri{border-color: #f6bb42}
+.serve .col-pri,.serve .col-pri a{color: #f6bb42;}
+.serve .hov-pri:hover ,.serve .hov-pri a:hover{color: #f6bb42 !important}
+.serve .ipt:hover,.serve .ipt-text:hover,.serve .textarea:hover,.serve .ipt:focus,.serve .ipt-text:focus,.serve .textarea:focus {border: solid 1px #f6bb42}
+.serve .gra-pri{
+	background:  -webkit-linear-gradient(top, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%);
+	background:  -o-linear-gradient(bottom, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%);
+	background:  -moz-linear-gradient(bottom, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%);
+	background:  linear-gradient(to bottom, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%)
+}
+.serve .gra-pri2{
+	background: -webkit-linear-gradient(top, #ffda72 0%, #ffcc3b 93% , #ffb216 96%, #ff9400 100%);
+	background: -o-linear-gradient(bottom, #ffda72 0%, #ffcc3b 93% , #ffb216 96%, #ff9400 100%);
+	background: -moz-linear-gradient(bottom, #ffda72 0%, #ffcc3b 93% , #ffb216 96%, #ff9400 100%);
+	background: linear-gradient(to bottom, #ffda72 0%, #ffcc3b 93% , #ffb216 96%, #ff9400 100%)
+}
+/*三角形*/
+.serve .triangle{height:0px;width:0px;border-left:solid 208px #FFE4AC;border-top:solid 20px rgba(0,0,0,0)}
+.serve .triangle2{height:0px;width:0px;border-right:solid 208px #FFE4AC;border-top:solid 20px rgba(0,0,0,0)}
+/*二级菜单*/
+.serve .triangle3{border-left:solid 208px #ffda72;}
+.serve .subnav span:hover{background:#FDBB00;color:#fff ;}
+/*二级菜单选中*/
+.serve .cur-list{background:#FDBB00;color:#fff ;}
+
+.serve .banner-info .text{border-top: 2px solid #f6bb42;}
+/*swiper进度条*/
+.serve .swiper-pagination-progress .swiper-pagination-progressbar{background: #e38700}
+
+
+/*=========================基金一条街===========================*/
+.fund{background: #bff8ff}
+.fund .bg-pri{background: #2196f3}
+.fund .bor-pri{border-color: #00bcd4}
+.fund .col-pri,.fund .col-pri a{color: #008eff;}
+.fund .hov-pri:hover ,.fund .hov-pri a:hover{color: #008eff !important}
+.fund .ipt:hover,.fund .ipt-text:hover,.fund .textarea:hover,.fund .ipt:focus,.fund .ipt-text:focus,.fund .textarea:focus {border: solid 1px #008eff}
+.fund .gra-pri{
+	background:  -webkit-linear-gradient(top, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%);
+	background:  -o-linear-gradient(bottom, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%);
+	background:  -moz-linear-gradient(bottom, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%);
+	background:  linear-gradient(to bottom, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%)
+}
+.fund .gra-pri2{
+	background: -webkit-linear-gradient(top, #85f1ff 0%, #6dbdc7 93% , #348e9a 96%, #29666e 100%);
+	background: -o-linear-gradient(bottom, #85f1ff 0%, #6dbdc7 93% , #348e9a 96%, #29666e 100%);
+	background: -moz-linear-gradient(bottom, #85f1ff 0%, #6dbdc7 93% , #348e9a 96%, #29666e 100%);
+	background: linear-gradient(to bottom, #85f1ff 0%, #6dbdc7 93% , #348e9a 96%, #29666e 100%)
+}
+/*三角形*/
+.fund .triangle{height:0px;width:0px;border-left:solid 208px #FFE4AC;border-top:solid 20px rgba(0,0,0,0)}
+.fund .triangle2{height:0px;width:0px;border-right:solid 208px #FFE4AC;border-top:solid 20px rgba(0,0,0,0)}
+/*二级菜单*/
+.fund .triangle3{border-left:solid 208px #85f0fe;}
+.fund .subnav span:hover{background:#008eff;color:#fff ;}
+/*二级菜单选中*/
+.fund .cur-list{background:#008eff;color:#fff ;}
+
+.fund .banner-info .text{border-top: 2px solid #03a9f4;}
+/*swiper进度条*/
+.fund .swiper-pagination-progress .swiper-pagination-progressbar{background: #008eff}
+
+
+/* 导航背景hover渐变 */
+	/* 关于小镇 */
+.town-hovbg:hover a h3,.town-hovbg:hover a p{color:white !important}
+.town-hovbg:hover{
+	background:  -webkit-linear-gradient(top, #5e8510 0%,#5D8211 60%,#49660E 100%);
+	background:  -o-linear-gradient(bottom, #5e8510 0%,#5D8211 60%,#49660E 100%);
+	background:  -moz-linear-gradient(bottom, #5e8510 0%,#5D8211 60%,#49660E 100%);
+	background:  linear-gradient(to bottom, #5e8510 0%,#5D8211 60%,#49660E 100%)
+}
+	/* 基金一条街 */
+.fund-hovbg:hover a h3,.fund-hovbg:hover a p{color:white !important}
+.fund-hovbg:hover{
+	background:  -webkit-linear-gradient(top, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%);
+	background:  -o-linear-gradient(bottom, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%);
+	background:  -moz-linear-gradient(bottom, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%);
+	background:  linear-gradient(to bottom, #00BCD4 0%,#3bc2ff 60%,#19b8ff 80%, #03A9F4 100%)
+}	
+	/* 国际教育 */
+.educ-hovbg:hover a h3,.educ-hovbg:hover a p{color:white !important}
+.educ-hovbg:hover{
+	background:  -webkit-linear-gradient(top, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  -o-linear-gradient(bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  -moz-linear-gradient(bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%);
+	background:  linear-gradient(to bottom, #2F90BA 0%,#297DA1 60%,#257192 80%, #48849E 100%)
+}
+	/* 亚太研究 */
+.research-hovbg:hover a h3,.research-hovbg:hover a p{color:white !important}
+.research-hovbg:hover{
+	background:  -webkit-linear-gradient(top, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%);
+	background:  -o-linear-gradient(bottom, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%);
+	background:  -moz-linear-gradient(bottom, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%);
+	background:  linear-gradient(to bottom, #E93A47 0%,#CA323D 60%,#B72D37 80%, #C6585D 100%)
+}
+	/* 服务中心 */
+.serve-hovbg:hover a h3,.serve-hovbg:hover a p{color:white !important}
+.serve-hovbg:hover{
+	background:  -webkit-linear-gradient(top, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%);
+	background:  -o-linear-gradient(bottom, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%);
+	background:  -moz-linear-gradient(bottom, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%);
+	background:  linear-gradient(to bottom, #ffb342 0%,#ff8f19 60%,#ff9800 80%, #ffa829 100%)
+}
+	/* 新闻中心 */
+.news-hovbg:hover a h3,.news-hovbg:hover a p{color:white !important}
+.news-hovbg:hover{
+	background:  -webkit-linear-gradient(top, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%);
+	background:  -o-linear-gradient(bottom, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%);
+	background:  -moz-linear-gradient(bottom, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%);
+	background:  linear-gradient(to bottom, #A446A4 0%,#893B8A 60%,#843E85 80%, #995F99 100%)
+}
